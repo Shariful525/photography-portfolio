@@ -1,0 +1,9 @@
+.btm-footer{
+    background-color: url(./images/foterpink.png);
+    background-position: top;
+    background-repeat: no-repeat;
+}
+.footer-four{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
