@@ -1,0 +1,7 @@
+.circle{
+    width: 192px;
+    height: 192px;
+    flex-shrink: 0;
+    background-color: rgba(255, 59, 235, 0.14);
+    filter: blur(82px);        
+}

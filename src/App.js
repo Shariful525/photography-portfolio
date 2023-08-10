@@ -43,7 +43,7 @@ function App() {
     },
   ]);
   return (
-    <div className="bg-[#1B1A1A]">
+    <div className="bg-[#1B1A1A] overflow-y-auto">
       <RouterProvider router={router}></RouterProvider>
     </div>
   );

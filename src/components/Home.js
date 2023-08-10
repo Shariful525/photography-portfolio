@@ -5,7 +5,7 @@ import triangle from "./images/small-triangle.png";
 import ring from "./images/banner-ring.png";
 import adImg from "./images/ads.png";
 import blueBg from "./images/blueellipse.png";
-import yellowBg from "./images/yellowEllipse.png";
+import ylbg from "./images/ylbg.png";
 import pinkBg from "./images/pinkBg.png";
 import aboutImg from "./images/About.png";
 import simble from "./images/gonok.png";
@@ -34,7 +34,7 @@ const Home = () => {
         </div>
 
         <div className="relative">
-          <img src={yellowBg} className="absolute top-0" alt="" />
+          <img src={ylbg} className="absolute top-0" alt="" />
           <div className="flex ml-10">
             <img src={triangle} alt="tr" />
             <p className="text-[#F5A623] font-bold ml-5">
