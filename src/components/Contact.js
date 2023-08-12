@@ -123,11 +123,10 @@ const Contact = () => {
               <img className="lg:w-[165px] w-[100px]" src={mapSider} alt="" />
             </div>
             <div className="">
-<<<<<<< HEAD
+
               <img className=" mx-auto mb-[20px]" src={mapTp} alt="" />
-=======
               <img className="mx-auto mb-[20px]" src={mapTp} alt="" />
->>>>>>> 9701c0456b8ae9d8a7a4dc8bb3eb45d276f9497c
+
               <h2 className="lg:text-[50px] text-[33px]">
                 Google <span className="text-bold">Map</span>
               </h2>
@@ -142,17 +141,12 @@ const Contact = () => {
             title="google-map"
             width="95%"
             height="450"
-<<<<<<< HEAD
             className="mx-auto rounded-[20px] border-8 border-[#6698ff1a] lg:h-[450px] h-[280px]"
-            style={{ filter: "invert(90%)" }}
+
             loading="fast"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-=======
-            className="mx-auto rounded-[20px] border-8 border-[#6698ff1a]"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
->>>>>>> 9701c0456b8ae9d8a7a4dc8bb3eb45d276f9497c
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+
         </div>
       </div>
     </div>
