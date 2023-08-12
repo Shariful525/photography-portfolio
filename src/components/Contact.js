@@ -124,7 +124,6 @@ const Contact = () => {
             </div>
             <div className="">
 
-              <img className=" mx-auto mb-[20px]" src={mapTp} alt="" />
               <img className="mx-auto mb-[20px]" src={mapTp} alt="" />
 
               <h2 className="lg:text-[50px] text-[33px]">
@@ -142,7 +141,6 @@ const Contact = () => {
             width="95%"
             height="450"
             className="mx-auto rounded-[20px] border-8 border-[#6698ff1a] lg:h-[450px] h-[280px]"
-
             loading="fast"
             referrerpolicy="no-referrer-when-downgrade">
           </iframe>
