@@ -5,8 +5,8 @@ import officeIcon from "./images/office.png";
 import callIcon from "./images/call.png";
 import emailIcon from "./images/email.png";
 import mapTp from "./images/map-tp.png";
-import mapSider from './images/gallery-bottom-pic.png';
-import addPng from './images/add.png';
+import mapSider from "./images/gallery-bottom-pic.png";
+import addPng from "./images/add.png";
 import "../components/Contact.css";
 
 const Contact = () => {
@@ -27,9 +27,9 @@ const Contact = () => {
               </h1>
               <p className="py-6 text-left">
                 In a laoreet purus. Integer turpis quam, laoreet id orci nec,
-                ultrices  lacinia nunc. Aliquam erat vo, Aliquam pulvinar
-                vestibulum blandit.
-                Donec sed nisl libero. Fusce dignissim luctus sem
+                ultrices lacinia nunc. Aliquam erat vo, Aliquam pulvinar
+                vestibulum blandit. Donec sed nisl libero. Fusce dignissim
+                luctus sem
               </p>
             </div>
             {/* form section */}
@@ -109,7 +109,6 @@ const Contact = () => {
                 <img src={addPng} alt="" />
               </div>
             </div>
-
           </div>
         </div>
       </div>
@@ -125,25 +124,24 @@ const Contact = () => {
             </div>
             <div className="">
               <img className="mx-auto mb-[20px]" src={mapTp} alt="" />
-              <h2 className="text-[50px] sm:text-[33px]">
+              <h2 className="lg:text-[50px] text-[33px]">
                 Google <span className="text-bold">Map</span>
               </h2>
             </div>
-            <div >
-
-            </div>
+            <div></div>
           </div>
         </div>
         <div className=" mt-[70px] mb-[292px]">
-
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d459.7031344869064!2d91.23950763491821!3d22.816352350344328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375359b03728e225%3A0x8b12890374e6a618!2sExpertSquad.net!5e0!3m2!1sen!2sbd!4v1691510879390!5m2!1sen!2sbd"
+          <iframe
+            style={{ filter: "invert(90%)" }}
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d459.7031344869064!2d91.23950763491821!3d22.816352350344328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375359b03728e225%3A0x8b12890374e6a618!2sExpertSquad.net!5e0!3m2!1sen!2sbd!4v1691510879390!5m2!1sen!2sbd"
             title="google-map"
-            width='95%'
+            width="95%"
             height="450"
             className="mx-auto rounded-[20px] border-8 border-[#6698ff1a]"
-
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
     </div>
