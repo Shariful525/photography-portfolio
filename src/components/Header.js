@@ -3,7 +3,10 @@ import { FaTimes } from 'react-icons/fa';
 import imageOne from "./images/photography-logo.png";
 import menuBar from './images/menuBar.png'
 import { Link } from 'react-router-dom';
-import { FaTwitter, FaFacebook, FaYoutube, FaLinkedin } from 'react-icons/fa';
+import twImg from './images/twitter.png';
+import fbImg from './images/facebook.png';
+import ytImg from './images/yootube.png'
+import vImg from './images/v.png';
 
 function Header() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -63,19 +66,22 @@ function Header() {
 
         </div>
 
-        <div className='lg:visible sm:inline'>
-          <a href="/" className="text-white hover:text-gray-400 mx-2">
-            <FaTwitter />
-          </a>
-          <a href="/" className="text-white hover:text-gray-400 mx-2">
-            <FaFacebook />
-          </a>
-          <a href="/" className="text-white hover:text-gray-400 mx-2">
-            <FaYoutube />
-          </a>
-          <a href="/" className="text-white hover:text-gray-400 mx-2">
-            <FaLinkedin />
-          </a>
+        <div className="flex justify-center items-center lg:my-[50px] my-[45px]">
+          <Link className="text-white hover:text-gray-400 mx-8">
+            <img src={twImg} alt="twitter logo" />
+          </Link>
+          <Link className="text-white hover:text-gray-400 mx-8">
+            <img src={fbImg} alt="twitter logo" />
+
+          </Link>
+          <Link className="text-white hover:text-gray-400 mx-8">
+            <img src={ytImg} alt="twitter logo" />
+
+          </Link>
+          <Link className="text-white hover:text-gray-400 mx-8">
+            <img src={vImg} alt="twitter logo" />
+
+          </Link>
         </div>
       </nav>
     </div>
