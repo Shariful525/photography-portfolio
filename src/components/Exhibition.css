@@ -1,4 +1,4 @@
-.left-col {
+/* .left-col {
   background-image: url(./images//pink2.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -14,7 +14,7 @@
   background-image: url(./images//pink2.png);
   background-position: center;
   background-repeat: no-repeat;
-}
+} */
 
 .exhibitionBg {
   background-image: url(./images/gallery-vector.png);
@@ -27,6 +27,7 @@
 }
 .t-color {
   color: rgba(255, 255, 255, 0.7);
+  font-family: 16px;
 }
 .rounded-img1 {
   width: 394.265px;
@@ -40,4 +41,13 @@
   height: 398.849px;
   border-radius: 570px 570px 10px 10px;
   border: 10px solid #1b1a1a;
+}
+.rounded-img {
+  margin-right: 55px;
+  margin-left: 55px;
+  width: 420px;
+  height: 550px;
+  border-radius: 570px 570px 10px 10px;
+  border: 6px solid rgba(102, 152, 255, 0.1);
+  box-shadow: 0px 4px 104px 0px rgba(255, 255, 255, 0.2);
 }

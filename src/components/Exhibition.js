@@ -5,7 +5,7 @@ import addImg from "./images/add.png";
 import mukutImg from "./images/mukut.png";
 import frogImg from "./images/frog.png";
 import bflyImg from "./images/bfly.png";
-import orange from "./images/orange.png";
+import orange from "./images/orange.jpg";
 import girgiti from "./images/girgiti.png";
 import graphar from "./images/graphar.png";
 import cameraImg from "./images/camera.png";
@@ -36,10 +36,10 @@ const Exhibition = () => {
             </p>
             <button className="btn  border-blue-500">Checkout</button>
           </div>
-          <div className="relative bottom-[-275px] w-[420px] h-[550px]">
-            <img src={exhibitionMain} alt=""></img>
+          <div className="relative bottom-[-120px]">
+            <img className="rounded-img" src={orange} alt=""></img>
           </div>
-          <div className="w-[413px] right-side text-center right-div mt-[293px] relative bottom-[-140px]">
+          <div className="w-[413px] right-side text-center right-div mt-[293px] relative bottom-[-70px] p-4">
             <p className="t-color">
               Hi, In a laoreet purus. Integer turpis quam, laoreet id orci nec,
               ultrices lacinia nunc. Aliquam erat vo, Aliquam pulvinar
@@ -78,7 +78,7 @@ const Exhibition = () => {
                 Checkout
               </button>
             </div>
-            <div className=" flex justify-end relative z-20">
+            <div className=" flex justify-end relative z-10">
               <div className=" relative ">
                 <img className="rounded-img1" src={butterflyImg} alt="Images" />
               </div>
@@ -173,7 +173,7 @@ const Exhibition = () => {
 
       {/* section 4 start  */}
       <section className="mt-[293px] tpbg">
-        <div className="w-[1241px] mx-auto">
+        <div className="w-[1241px] mx-auto pb-[200px]">
           <div className="grid grid-cols-2 justify-center items-center mx-auto">
             <div className=" flex justify-start relative z-20">
               <div className=" relative ">
