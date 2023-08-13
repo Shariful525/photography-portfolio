@@ -6,6 +6,9 @@ module.exports = {
       backgroundImage: {
         "header-pattern": "url('/images/')",
       },
+      colors: {
+        textColor: "rgba(255, 255, 255, 0.70)",
+      },
     },
   },
   plugins: [require("daisyui")],
