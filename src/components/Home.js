@@ -20,49 +20,51 @@ import exhibition4 from "./images/Exhibition (4).png";
 import exhibition5 from "./images/Exhibition (5).png";
 import exhibition6 from "./images/Exhibition (6).png";
 import exhibition7 from "./images/Exhibition (7).png";
+
+
+
 const Home = () => {
   return (
-    <div className="relative max-w-[1640px] mx-auto">
-      <img className="absolute top-0" src={blueBg} alt="/" />
-      <div className="absolute top-[330px] left-[500px]">
-        <img src={adImg} alt="adImg" />
-      </div>
-      <div className="w h-[578px] flex ml-[100px] mt-[77px] relative">
-        <div>
-          <img src={imageTwo} alt="banner-img" />
-          <img src={pinkBg} className="absolute right-0 top-0" alt="" />
+    <div className="lg:mx-[100px] mt-[70px] mx-[22px]">
+
+      {/* Top Section */}
+      <div className="lg:flex lg:justify-between relative lg:gap-8 home-page-top-banner">
+        <div >
+          <img className="lg:w-[388px] w-[368px] h-[440px] lg:h-[463px] mx-auto z-10" src={imageTwo} alt="banner-img" />
+        </div>
+        <div className="absolute bottom-[-250px] left-[120px] lg:bottom-[-150px] lg:left-[450px] lg:w-[328px] w-[220px] h-[183px]">
+          <img src={adImg} alt="" />
         </div>
 
-        <div className="relative">
-          <img src={ylbg} className="absolute top-0" alt="" />
-          <div className="flex ml-10">
-            <img src={triangle} alt="tr" />
-            <p className="text-[#F5A623] font-bold ml-5">
+        <div className="lg:w-8/12 lg:flex flex-col lg:relative text-center">
+          <div className="lg:flex  gap-4 lg:mb-[200px] ">
+            <img alt="" className="mx-auto lg:mx-0 mb-4" src={triangle} />
+            <p className="text-[#F5A623] font-bold text-[18px]">
               #1 Photo of The Year Winners
             </p>
           </div>
 
-          <div className="mt-[31px] ml-5">
-            <h2 className="text-[#FFFFFF] font-semi-bold text-left text-6xl">
+          <div className="lg:mt-16 lg:absolute mt-4 lg:left-[-65px] lg:leading-normal">
+            <h2 className="text-[#FFFFFF] text-[38px] font-semi-bold lg:text-left lg:text-6xl ">
               Photography helps <br />
-              <small className="font-bold">People to see</small>
+              <small className="font-bold text-[38px]">People to see</small>
             </h2>
           </div>
 
-          <div className="mt-[50px] ml-[71px] text-[18px] opacity-50 text-[#FFF] text-left">
+          <div className=" mt-4 opacity-50 text-[#FFF] lg:text-[18px] text-[14px] lg:text-left lg:ml-[70px] lg:w-[500px] mb-[51px]">
             <p>
-              Do you have an idea but are struggling to execute it <br />{" "}
+              Do you have an idea but are struggling to execute it
               because of the complexities involved? Don't worry. We
-              <br /> are here to solve your problem. We help entrepreneurs{" "}
-              <br /> convert their ideas into products and services.
+              are here to solve your problem. We help entrepreneurs
+              convert their ideas into products and services.
             </p>
           </div>
         </div>
-
-        <div className="absolute bottom-[105px] right-[98px]">
-          <img src={ring} alt="ring" />
+        <div className="lg:absolute lg:right-0 lg:bottom-0" id="ring">
+          <img className="lg:w-[223px]" src={ring} alt="" />
         </div>
       </div>
+      {/* Top Section */}
 
       <section id="about-section" className="bg-[#1B1A1A]">
         <div className="pt-[232px] ml-[100px] about-page">
