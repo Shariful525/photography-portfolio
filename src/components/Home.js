@@ -95,9 +95,7 @@ const Home = () => {
               </p>
             </div>
             <div className="lg:mt-[90px] mt-[46px] lg:mx-0 mx-auto">
-              <button className="text-white btn btn-secondary ">
-                Contact Me
-              </button>
+
             </div>
           </div>
         </div>
