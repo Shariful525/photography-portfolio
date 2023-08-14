@@ -3,7 +3,6 @@ import "./Exhibition.css";
 import addImg from "./images/add.png";
 import mukutImg from "./images/mukut.png";
 import orange from "./images/orange.jpg";
-
 import butterflyImg from "./images/butterflyImg.jpg";
 import frogImg1 from "./images/frogImg.jpg";
 import { Link } from "react-router-dom";
@@ -13,39 +12,8 @@ const Exhibition = () => {
   return (
     <div className="mx-auto">
       <div className="h-[800px] w-full bg-[#000] opacity-20 relative"></div>
-      {/* <section className="absolute top-40 left-[15%]">
-        <div className="exhi-top">
-          <h1 className="text-[68px] text-center leading-0 text-white">
-            Joined more over <br />
-            15+ Exhibitions
-          </h1>
-        </div>
-        <div className=" flex justify-center align-middle mx-auto relative">
-          <div className="w-[413px] left-side flex flex-col left-col">
-            <img className="w-[163px] mb-[100px]" src={addImg} alt=""></img>
-            <p className="mb-[40px] t-color">
-              In a laoreet purus. Integer turpis quam, laoreet id orci nec,
-              ultrices lacinia nunc. Aliquam erat vo, Aliquam pulvinar
-              vestibulum blandit. Donec sed nisl libero. Fusce dignissim luctus
-              sem
-            </p>
-            <button className="btn  border-blue-500">Checkout</button>
-          </div>
-          <div className="relative bottom-[-120px]">
-            <img className="rounded-img" src={orange} alt=""></img>
-          </div>
-          <div className="w-[413px] right-side text-center right-div mt-[293px] relative bottom-[-70px] p-4">
-            <p className="t-color">
-              Hi, In a laoreet purus. Integer turpis quam, laoreet id orci nec,
-              ultrices lacinia nunc. Aliquam erat vo, Aliquam pulvinar
-              vestibulum blandit. Donec sed nisl libero. Fusce dignissim luctus
-              sem
-            </p>
-          </div>
-        </div>
-      </section> */}
 
-      <section className=" top-[175px] absolute inset-0">
+      <section className=" top-[175px] max-w-[1240px] mx-auto absolute inset-0">
         <div className="">
           <h1 className="text-[68px] text-center leading-0 text-white">
             Joined more over
@@ -84,7 +52,7 @@ const Exhibition = () => {
       {/* section 1 start  */}
 
       <section className="mt-[293px] tpbg">
-        <div className="w-[1241px] mx-auto">
+        <div className="w-[1240px] mx-auto">
           <div className="grid grid-cols-2 justify-center items-center mx-auto">
             <div className="relative">
               <img src={mukutImg} alt="" />
@@ -126,7 +94,7 @@ const Exhibition = () => {
 
       {/* section 2 start  */}
       <section className="mt-[293px] tpbg">
-        <div className="w-[1241px] mx-auto">
+        <div className="w-[1240px] mx-auto">
           <div className="grid grid-cols-2 justify-center items-center mx-auto">
             <div className=" flex justify-start relative z-20">
               <div className=" relative ">
@@ -154,7 +122,7 @@ const Exhibition = () => {
                 neque pellentesque efficitur
               </p>
               <div className="mt-8">
-                <Link>
+                <Link className="inline-block">
                   <Chckoutbtn></Chckoutbtn>
                 </Link>
               </div>
@@ -166,7 +134,7 @@ const Exhibition = () => {
 
       {/* section 3 start  */}
       <section className="mt-[293px] tpbg">
-        <div className="w-[1241px] mx-auto">
+        <div className="w-[1240px] mx-auto">
           <div className="grid grid-cols-2 justify-center items-center mx-auto">
             <div className="relative">
               <h1 className="text-[50px] text-white">
@@ -206,7 +174,7 @@ const Exhibition = () => {
 
       {/* section 4 start  */}
       <section className="mt-[293px] tpbg">
-        <div className="w-[1241px] mx-auto pb-[200px]">
+        <div className="w-[1240px] mx-auto pb-[200px]">
           <div className="grid grid-cols-2 justify-center items-center mx-auto">
             <div className=" flex justify-start relative z-20">
               <div className=" relative ">
