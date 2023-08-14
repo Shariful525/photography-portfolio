@@ -17,7 +17,7 @@ function Header() {
 
   return (
     <div>
-      <nav className=" p-4 lg:flex lg:justify-between">
+      <nav className="lg:mx-[100px] lg:flex lg:justify-between">
         <div className="flex items-center justify-between">
           <div className="text-white font-semibold">
             <Link to='/'><img src={imageOne} alt='' /></Link>
