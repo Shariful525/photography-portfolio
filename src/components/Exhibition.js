@@ -2,11 +2,12 @@ import React from "react";
 import "./Exhibition.css";
 import addImg from "./images/add.png";
 import mukutImg from "./images/mukut.png";
-
 import orange from "./images/orange.jpg";
 
 import butterflyImg from "./images/butterflyImg.jpg";
 import frogImg1 from "./images/frogImg.jpg";
+import { Link } from "react-router-dom";
+import Chckoutbtn from "./Chckoutbtn";
 
 const Exhibition = () => {
   return (
@@ -61,7 +62,10 @@ const Exhibition = () => {
               vestibulum blandit. Donec sed nisl libero. Fusce dignissim luctus
               sem
             </p>
-            <button className="btn  border-blue-500">Checkout</button>
+            {/* <button className="btn  border-blue-500">Checkout</button> */}
+            <Link>
+              <Chckoutbtn></Chckoutbtn>
+            </Link>
           </div>
           <div className="relative bottom-[-120px]">
             <img className="rounded-img" src={orange} alt=""></img>
@@ -101,9 +105,11 @@ const Exhibition = () => {
                 Fusce dignissim luctus sem eu dapibus. P Vestibulum eu quam nec
                 neque pellentesque efficitur
               </p>
-              <button className="btn bg-black border-blue-500 mt-[50px]">
-                Checkout
-              </button>
+              <div className="mt-8">
+                <Link>
+                  <Chckoutbtn></Chckoutbtn>
+                </Link>
+              </div>
             </div>
             <div className=" flex justify-end relative z-10">
               <div className=" relative ">
@@ -131,8 +137,6 @@ const Exhibition = () => {
               </div>
             </div>
             <div className="relative">
-              <img src={mukutImg} alt="" />
-
               <h1 className="text-[50px] text-white">
                 First Winner <br />{" "}
                 <span className="text-bold leading-5">DUBAI</span>
@@ -149,9 +153,11 @@ const Exhibition = () => {
                 Fusce dignissim luctus sem eu dapibus. P Vestibulum eu quam nec
                 neque pellentesque efficitur
               </p>
-              <button className="btn bg-black border-blue-500 mt-[50px]">
-                Checkout
-              </button>
+              <div className="mt-8">
+                <Link>
+                  <Chckoutbtn></Chckoutbtn>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -163,8 +169,6 @@ const Exhibition = () => {
         <div className="w-[1241px] mx-auto">
           <div className="grid grid-cols-2 justify-center items-center mx-auto">
             <div className="relative">
-              <img src={mukutImg} alt="" />
-
               <h1 className="text-[50px] text-white">
                 First Winner <br />{" "}
                 <span className="text-bold leading-5">DUBAI</span>
@@ -181,9 +185,11 @@ const Exhibition = () => {
                 Fusce dignissim luctus sem eu dapibus. P Vestibulum eu quam nec
                 neque pellentesque efficitur
               </p>
-              <button className="btn bg-black border-blue-500 mt-[50px]">
-                Checkout
-              </button>
+              <div className="mt-8">
+                <Link>
+                  <Chckoutbtn></Chckoutbtn>
+                </Link>
+              </div>
             </div>
             <div className=" flex justify-end relative z-20">
               <div className=" relative ">
@@ -211,8 +217,6 @@ const Exhibition = () => {
               </div>
             </div>
             <div className="relative">
-              <img src={mukutImg} alt="" />
-
               <h1 className="text-[50px] text-white">
                 First Winner <br />{" "}
                 <span className="text-bold leading-5">DUBAI</span>
@@ -229,9 +233,11 @@ const Exhibition = () => {
                 Fusce dignissim luctus sem eu dapibus. P Vestibulum eu quam nec
                 neque pellentesque efficitur
               </p>
-              <button className="btn bg-black border-blue-500 mt-[50px]">
-                Checkout
-              </button>
+              <div className="mt-8">
+                <Link>
+                  <Chckoutbtn></Chckoutbtn>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
