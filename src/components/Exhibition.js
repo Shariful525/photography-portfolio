@@ -1,16 +1,10 @@
 import React from "react";
 import "./Exhibition.css";
-import exhibitionMain from "./images/exhibitions_banner.png";
 import addImg from "./images/add.png";
 import mukutImg from "./images/mukut.png";
-import frogImg from "./images/frog.png";
-import bflyImg from "./images/bfly.png";
+
 import orange from "./images/orange.jpg";
-import girgiti from "./images/girgiti.png";
-import graphar from "./images/graphar.png";
-import cameraImg from "./images/camera.png";
-import graphar2 from "./images/graphar2.png";
-import pet from "./images/pet.png";
+
 import butterflyImg from "./images/butterflyImg.jpg";
 import frogImg1 from "./images/frogImg.jpg";
 
@@ -18,14 +12,47 @@ const Exhibition = () => {
   return (
     <div className="mx-auto">
       <div className="h-[800px] w-full bg-[#000] opacity-20 relative"></div>
-      <section className="absolute top-40 left-[15%]">
+      {/* <section className="absolute top-40 left-[15%]">
         <div className="exhi-top">
           <h1 className="text-[68px] text-center leading-0 text-white">
             Joined more over <br />
             15+ Exhibitions
           </h1>
         </div>
-        <div className="container-middle flex mx-auto relative">
+        <div className=" flex justify-center align-middle mx-auto relative">
+          <div className="w-[413px] left-side flex flex-col left-col">
+            <img className="w-[163px] mb-[100px]" src={addImg} alt=""></img>
+            <p className="mb-[40px] t-color">
+              In a laoreet purus. Integer turpis quam, laoreet id orci nec,
+              ultrices lacinia nunc. Aliquam erat vo, Aliquam pulvinar
+              vestibulum blandit. Donec sed nisl libero. Fusce dignissim luctus
+              sem
+            </p>
+            <button className="btn  border-blue-500">Checkout</button>
+          </div>
+          <div className="relative bottom-[-120px]">
+            <img className="rounded-img" src={orange} alt=""></img>
+          </div>
+          <div className="w-[413px] right-side text-center right-div mt-[293px] relative bottom-[-70px] p-4">
+            <p className="t-color">
+              Hi, In a laoreet purus. Integer turpis quam, laoreet id orci nec,
+              ultrices lacinia nunc. Aliquam erat vo, Aliquam pulvinar
+              vestibulum blandit. Donec sed nisl libero. Fusce dignissim luctus
+              sem
+            </p>
+          </div>
+        </div>
+      </section> */}
+
+      <section className=" top-[175px] absolute inset-0">
+        <div className="">
+          <h1 className="text-[68px] text-center leading-0 text-white">
+            Joined more over
+            <br />
+            <span className="font-bold">15+ Exhibitions</span>
+          </h1>
+        </div>
+        <div className="flex justify-center align-middle mx-auto relative">
           <div className="w-[413px] left-side flex flex-col left-col">
             <img className="w-[163px] mb-[100px]" src={addImg} alt=""></img>
             <p className="mb-[40px] t-color">
