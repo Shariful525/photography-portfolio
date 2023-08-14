@@ -9,7 +9,6 @@ import Home from "./components/Home";
 import Notfound from "./components/Notfound";
 
 function App() {
-  console.log("This is Rimon");
   const router = createBrowserRouter([
     {
       path: "/",

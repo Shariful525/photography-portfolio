@@ -5,16 +5,16 @@
 }
 
 .about-info {
-    background-image: ;
+
     background-position: right;
     background-repeat: no-repeat;
 }
 
-.about-img {
+/* .about-img {
     width: 562.5px;
     height: 600px;
     margin-top: 137px;
-}
+} */
 
 .contact-btn {
     clip-path: polygon(91% 2%, 95% 59%, 9% 62%, 1% 20%);
@@ -51,6 +51,10 @@
     }
 
     #ring {
-        display: none;
+        position: absolute;
+
+        right: -100px;
+        bottom: 350px;
+
     }
 }

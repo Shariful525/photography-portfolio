@@ -10,9 +10,7 @@ import pinkBg from "./images/pinkBg.png";
 import aboutImg from "./images/About.png";
 import simble from "./images/gonok.png";
 import galleryVector from "./images/gallery-vector.png";
-import gpic1 from "./images/g-pic1.png";
-import gpic2 from "./images/gpic-2.png";
-import gpic3 from "./images/gpic3.png";
+import exhibitionTopRightImg from './images/gallery-bottom-pic.png';
 import exhibition1 from "./images/Exhibition (1).png";
 import exhibition2 from "./images/Exhibition (2).png";
 import exhibition3 from "./images/Exhibition (3).png";
@@ -25,12 +23,12 @@ import exhibition7 from "./images/Exhibition (7).png";
 
 const Home = () => {
   return (
-    <div className="lg:mx-[100px] mt-[70px] mx-[22px]">
+    <div className="lg:mx-[100px] mt-[70px] mx-[22px] overflow-hidden">
 
-      {/* Top Section */}
-      <div className="lg:flex lg:justify-between relative lg:gap-8 home-page-top-banner">
+      {/* Hero Section */}
+      <div className="lg:flex lg:justify-between relative lg:gap-8 home-page-top-banner ">
         <div >
-          <img className="lg:w-[388px] w-[368px] h-[440px] lg:h-[463px] mx-auto z-10" src={imageTwo} alt="banner-img" />
+          <img className="lg:w-[388px] w-[368px] h-[440px] lg:h-[463px] mx-auto " src={imageTwo} alt="banner-img" />
         </div>
         <div className="absolute bottom-[-250px] left-[120px] lg:bottom-[-150px] lg:left-[450px] lg:w-[328px] w-[220px] h-[183px]">
           <img src={adImg} alt="" />
@@ -64,55 +62,58 @@ const Home = () => {
           <img className="lg:w-[223px]" src={ring} alt="" />
         </div>
       </div>
-      {/* Top Section */}
+      {/* Hero Section */}
 
-      <section id="about-section" className="bg-[#1B1A1A]">
-        <div className="pt-[232px] ml-[100px] about-page">
-          <div>
-            <h3 className="text-white text-left text-5xl">
-              About <small>Rasel Khan</small>
-            </h3>
-          </div>
-
-          <div className="flex">
-            <div className="about-img">
+      {/* About Section */}
+      <section id="about-section" className="bg-[#1B1A1A] mt-[292px]">
+        <div className="flex flex-col lg:flex-row lg:items-center">
+          <div className="lg:w-6/12 mx-auto">
+            <div className="lg:mb-[73px] mb-[52px]">
+              <h3 className="text-white lg:text-left lg:text-[50px] text-[27px]">
+                About <span className="text-bold lg:text-[50px] ">Rasel Khan</span>
+              </h3>
+            </div>
+            <div className="lg:w-[562px] w-[384px]">
               <img src={aboutImg} alt="nai" />
             </div>
-
-            <div className="about-info">
-              <div className="symbol ml-[660px]">
-                <img src={simble} alt="null" />
-              </div>
-
-              <div className="text-left text-white w-[550px] ml-[220px] mt-[71px]">
-                <p>
-                  In a laoreet purus. Integer turpis quam, laoreet id orci nec,
-                  ultrices lacinia nunc. Aliquam erat vo, Aliquam pulvinar
-                  vestibulum blandit. Donec sed nisl libero. Fusce dignissim
-                  luctus sem eu dapibus. P Vestibulum eu quam nec neque
-                  pellentesque efficitur id eget nisl. Proin porta est convallis
-                  lacus bl Donec sed erat ut magna suscipit mattis. Aliquam erat
-                  volutpat. Morbi in orci risus. Donec pretium f Aliquam porta
-                  nisl dolor, molestie pellentesque elit molestie in. Morbi
-                  metus neque, elementum ullam
-                </p>
-              </div>
-              <button className="text-white contact-btn mt-[96px] ml-[220px]">
+          </div>
+          <div className="lg:w-6/12 flex flex-col relative">
+            <div className="absolute right-[-30px] top-[-25px] lg:right-0 lg:top-[-200px]">
+              <img className="w-[94px]" src={simble} alt="null" />
+            </div>
+            <div>
+              <p className="lg:text-[18px] lg:text-left text-center z-[1]">
+                In a laoreet purus. Integer turpis quam, laoreet id orci nec,
+                ultrices lacinia nunc. Aliquam erat vo, Aliquam pulvinar
+                vestibulum blandit. Donec sed nisl libero. Fusce dignissim
+                luctus sem eu dapibus. P Vestibulum eu quam nec neque
+                pellentesque efficitur id eget nisl. Proin porta est convallis
+                lacus bl Donec sed erat ut magna suscipit mattis. Aliquam erat
+                volutpat. Morbi in orci risus. Donec pretium f Aliquam porta
+                nisl dolor, molestie pellentesque elit molestie in. Morbi
+                metus neque, elementum ullam
+              </p>
+            </div>
+            <div className="lg:mt-[90px] mt-[46px] lg:mx-0 mx-auto">
+              <button className="text-white btn btn-secondary ">
                 Contact Me
               </button>
             </div>
           </div>
         </div>
       </section>
+      {/* About Section */}
 
-      <section id="my-gallery">
-        <div className="gallery-section text-white">
-          <div className="ml-[150px]">
-            <h1 className="text-5xl text-left text-bold">My Gallery</h1>
+      {/* Gallery Section */}
+      <section id="my-gallery" className="lg:mt-[193px] mt-[182px]">
+        <div className="gallery-section ">
+
+          <div className="">
+            <h1 className="lg:text-[50px] text-[30px] text-white text-left text-bold">My Gallery</h1>
           </div>
-          <div className="flex justify-around">
-            <div className="w-[774px] mt-[40px]">
-              <p className="text-left text-white opacity-[0.70]">
+          <div className="lg:flex lg:justify-between">
+            <div className="lg:w-[774px] lg:mt-[40px] mt-[35px] lg:ml-14">
+              <p className="text-left lg:text-[18px] text-[16px] text-white opacity-[0.70]">
                 In a laoreet purus. Integer turpis quam, laoreet id orci nec,
                 ultrices lacinia nunc. Aliquam erat vo, Aliquam pulvinar
                 vestibulum blandit. Donec sed nisl libero. Fusce dignissim
@@ -120,74 +121,68 @@ const Home = () => {
                 pellentesque efficitur id eget nisl.
               </p>
             </div>
-            <div className="flex gap-4 items-center">
+            <div className="lg:flex gap-4 lg:items-center hidden">
               <div>
-                <button>left</button>
+                <a className="btn btn-outline btn-info" href="#slide-6">Prev</a>
               </div>
               <div>
-                <button>Right</button>
+                <a className="btn btn-outline btn-success" href="#slide-4"  >Next</a>
+
               </div>
             </div>
           </div>
 
-          <div className="gallery-div">
-            <div>
-              <img src={gpic1} alt="g-pic" />
-            </div>
-            <div>
-              <img src={gpic2} alt="g-pic" />
-            </div>
-            <div>
-              <img src={gpic3} alt="g-pic" />
-            </div>
-          </div>
+          <div className="carousel w-full gap-10 mt-[80px] ">
+            <div id="slide1" className="carousel-item relative lg:w-[400px] lg:h-[500px] rounded-[20px] border-[#6698ff1a] border-[8px] ">
+              <img src="https://images.pexels.com/photos/10034617/pexels-photo-10034617.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt='pizza' className="lg:w-[485px] lg:h-[500px] w-[340px] h-[435px] rounded-[20px]" />
 
-          <div className="btm-sheet mx-[100px]">
-            <div className="ml-[150px]">
-              <h1 className="text-6xl text-left">Exhibition</h1>
-              <p className="mt-[40px] w-[774px] text-left  opacity-[0.70]">
-                In a laoreet purus. Integer turpis quam, laoreet id orci nec,
-                ultrices lacinia nunc. Aliquam erat vo, Aliquam pulvinar
-                vestibulum blandit. Donec sed nisl libero. Fusce dignissim
-                luctus sem eu dapibus. P Vestibulum eu quam nec neque
-                pellentesque efficitur id eget nisl.
+            </div>
+            <div id="slide2" className="carousel-item relative lg:w-[400px] lg:h-[500px] rounded-[20px] border-[#6698ff1a] border-[8px]">
+              <img src="https://images.pexels.com/photos/17887967/pexels-photo-17887967.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt='pizza' className="lg:w-[485px] lg:h-[500px] w-[340px] h-[435px] rounded-[20px]" />
+
+            </div>
+            <div id="slide3" className="carousel-item relative lg:w-[400px] lg:h-[500px] rounded-[20px] border-[#6698ff1a] border-[8px]">
+              <img src="https://images.pexels.com/photos/9336369/pexels-photo-9336369.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt='pizza' className="lg:w-[485px] lg:h-[500px] w-[340px] h-[435px] rounded-[20px]" />
+
+            </div>
+            <div id="slide4" className="carousel-item relative lg:w-[400px] lg:h-[500px] rounded-[20px] border-[#6698ff1a] border-[8px]">
+              <img src="https://images.pexels.com/photos/12043012/pexels-photo-12043012.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt='pizza' className="lg:w-[485px] lg:h-[500px] w-[340px] h-[435px] rounded-[20px]" />
+
+            </div>
+            <div id="slide5" className="carousel-item relative lg:w-[400px] lg:h-[500px] rounded-[20px] border-[#6698ff1a] border-[8px]">
+              <img src="https://images.pexels.com/photos/17586062/pexels-photo-17586062/free-photo-of-blossoming-houseplants-on-house-balcony.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt='pizza' className="lg:w-[485px] lg:h-[500px] w-[340px] h-[435px] rounded-[20px]" />
+
+            </div>
+            <div id="slide6" className="carousel-item relative lg:w-[400px] lg:h-[500px] rounded-[20px] border-[#6698ff1a] border-[8px]">
+              <img src="https://images.pexels.com/photos/17910786/pexels-photo-17910786.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt='pizza' className="lg:w-[485px] lg:h-[500px] w-[340px] h-[435px] rounded-[20px]" />
+            </div>
+
+          </div>
+          <div className='flex justify-center gap-5 mt-10 lg:hidden'>
+            <a className="btn btn-outline btn-info" href='#slide1'>Prev</a>
+            <a className="btn btn-outline btn-success" href='#slide5' >Next</a>
+          </div>
+        </div>
+      </section>
+      {/* Gallery Section */}
+
+      {/* Exhibition Section*/}
+      <section id="exhibition-section" className="lg:mt[273px] mt-[176px] ">
+        <div>
+          <div className="flex justify-between relative">
+            <div>
+              <h1 className="lg:text-[50px] text-[30px] text-white font-bold">Exhibition</h1>
+              <p className="lg:text-[18px] text-[16px] leading-[26px]  text-white opacity-[0.70] lg:w-[774px] lg:mt-10 mt-[35px]">
+                In a laoreet purus. Integer turpis quam, laoreet id orci nec, ultrices lacinia nunc. Aliquam erat vo, Aliquam pulvinar vestibulum blandit. Donec sed  nisl libero. Fusce dignissim luctus sem eu dapibus. P Vestibulum eu quam nec neque pellentesque efficitur id eget nisl.
               </p>
             </div>
-
-            <div className="grid grid-cols-3">
-              <div className="bg-red-400 grid grid-cols-1 ">
-                <img src={exhibition1} alt="exhibiton-pic" />
-              </div>
-              <div className="bg-red-500 grid grid-cols-1">
-                <img src={exhibition3} alt="exhibiton-pic" />
-              </div>
-              <div className="bg-red-600 grid grid-cols-1 ">
-                <img src={exhibition4} alt="exhibiton-pic" />
-              </div>
-              <div className="bg-red-700 grid grid-cols-1 grid-rows-3">
-                hello
-              </div>
-              <div className="bg-red-800 grid grid-cols-3 grid-rows-3">
-                hello
-              </div>
-
-              {/* <div>
-                <div className="bg-teal-400">
-                  <img src={exhibition2} alt="exhibiton-pic" />
-                </div>
-
-                <div>
-                  <img src={exhibition6} alt="exhibiton-pic" />
-                </div>
-
-                <div>
-                  <img src={exhibition7} alt="exhibiton-pic" />
-                </div>
-              </div> */}
+            <div className="lg:w-[187px] w-[90px] absolute right-[-20px] lg:right-0 bottom-[170px] lg:bottom-[130px]">
+              <img src={exhibitionTopRightImg} alt="" />
             </div>
           </div>
         </div>
       </section>
+      {/* Exhibition Section*/}
     </div>
   );
 };
