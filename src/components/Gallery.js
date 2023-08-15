@@ -46,7 +46,7 @@ import img16 from './gallery/Rectangle 103.png'
 
 const Gallery = () => {
   return (
-    <div className='max-w-[1440px] mx-auto mb-[200px] relative'>
+    <div className='max-w-[1440px] mx-auto mb-[200px] lg:mt-[80px]  relative'>
       {/* Top Text Section */}
       <div>
         <h3 className='text-[#F5A623] text-[18px] text-bold text-center mb-5'>#1 Photo of The Year Winners</h3>

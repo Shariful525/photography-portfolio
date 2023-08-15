@@ -7,6 +7,7 @@ import twImg from './images/twitter.png';
 import fbImg from './images/facebook.png';
 import ytImg from './images/yootube.png'
 import vImg from './images/v.png';
+import './Header.css';
 
 function Header() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -17,9 +18,9 @@ function Header() {
 
   return (
     <div>
-      <nav className="lg:mx-[100px] lg:flex lg:justify-between">
+      <nav className="lg:mx-[100px] mx-[20px] my-[20px] lg:my-[40px] lg:flex lg:justify-around relative">
         <div className="flex items-center justify-between">
-          <div className="text-white font-semibold">
+          <div className="text-white lg:ml-[-190px]">
             <Link to='/'><img src={imageOne} alt='' /></Link>
           </div>
           <div className="lg:hidden">
@@ -37,51 +38,64 @@ function Header() {
           </div>
         </div>
         <div
-          className={`mt-4 ${isMenuOpen ? 'block' : 'hidden'} lg:flex lg:mt-0 lg:items-center lg:space-x-20`}
+          className={`mt-[115px] ${isMenuOpen ? 'block' : 'hidden'} lg:flex lg:mt-0 lg:items-center lg:space-x-20 space-y-[50px]  `}
         >
           <Link
             to="/about"
-            className="block text-white hover:text-gray-400 transition duration-300"
+            className="block text-[30px] text-[700] text-white hover:text-gray-400 transition duration-300 text-center"
           >
             About
           </Link>
           <Link
             to="/gallery"
-            className="block text-white hover:text-gray-400 transition duration-300"
+            className="block text-[30px] text-[700] text-white hover:text-gray-400 transition duration-300 text-center"
           >
             Gallery
           </Link>
           <Link
             to="/exhibition"
-            className="block text-white hover:text-gray-400 transition duration-300"
+            className="block text-[30px] text-[700] text-white hover:text-gray-400 transition duration-300 text-center"
           >
             Exhibition
           </Link>
           <Link
             to="/contact"
-            className="block text-white hover:text-gray-400 transition duration-300"
+            className="block text-[30px] text-[700] text-white hover:text-gray-400 transition duration-300 text-center"
           >
             Contact
           </Link>
 
         </div>
 
-        <div className="flex justify-center items-center lg:my-[50px] my-[45px]">
-          <Link className="text-white hover:text-gray-400 mx-8">
-            <img src={twImg} alt="twitter logo" />
-          </Link>
-          <Link className="text-white hover:text-gray-400 mx-8">
-            <img src={fbImg} alt="twitter logo" />
+        <div className="lg:w-[60px] mt-[206px] ml-[100px] lg:px-[20px] lg:pt-[20px] lg:pb-[62px] lg:bg-[#28293D] lg:rounded-[10px] lg:absolute lg:top-0 lg:right-0  relative" id='mobile-menu'>
+          <div className='lg:mb-[20px] w-[26px]'>
+            <Link className="text-white hover:text-gray-400 ">
+              <img src={twImg} alt="twitter logo" />
+            </Link>
+          </div>
 
-          </Link>
-          <Link className="text-white hover:text-gray-400 mx-8">
-            <img src={ytImg} alt="twitter logo" />
+          <div className='lg:mb-[20px] w-[26px]'>
+            <Link className="text-white hover:text-gray-400 ">
+              <img src={fbImg} alt="twitter logo" />
 
-          </Link>
-          <Link className="text-white hover:text-gray-400 mx-8">
-            <img src={vImg} alt="twitter logo" />
+            </Link>
+          </div>
+          <div className='lg:mb-[20px] w-[26px]'>
+            <Link className="text-white hover:text-gray-400 ">
+              <img src={ytImg} alt="twitter logo" />
 
-          </Link>
+            </Link>
+          </div>
+          <div className='lg:mb-[20px] w-[26px]'>
+            <Link className="text-white hover:text-gray-400 ">
+              <img src={vImg} alt="twitter logo" />
+
+            </Link>
+          </div>
+
+          <div className='lg:rotate-90 lg:bg-blue-600 lg:absolute lg:left-[-12px] lg:top-[220px] lg:px-[12px] lg:py-[8px] lg:rounded-[5px] lg:w-[85px] lg:visible invisible'>
+            <span className='lg:text-[10px] font-semi-bold text-white'>FOLLOW ME</span>
+          </div>
         </div>
       </nav>
     </div>

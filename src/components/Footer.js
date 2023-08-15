@@ -49,7 +49,7 @@ const Footer = () => {
       <div className="hr"></div>
       <div className="flex items-center gap-[20px] justify-center">
         <p class="mt-8 text-center text-white lg:text-[50px] text-[24px]">Hello@expertsquad.net</p>
-        <Link to='www.expertsquad.net'>
+        <Link target="blank" to='www.expertsquad.net'>
 
           <img src={extLink} alt="" />
         </Link>
