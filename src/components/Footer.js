@@ -12,7 +12,7 @@ const Footer = () => {
 
 
     <footer class="bg-[#161515] text-white lg:py-10 pt-[105px] pb-[37px]  px-2 lg:px-52 max-w-[1440px] mx-auto relative">
-      <div className="absolute lg:left-[100px] top-[-50px] left-[34px] lg:top-[-70px] w-[150px]">
+      <div className="absolute lg:left-[100px] top-[-50px] left-[34px] lg:top-[-6 0px] w-[150px]">
         <img src={ring} alt="" />
       </div>
       <div class="text-center ">

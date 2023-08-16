@@ -1,35 +1,8 @@
-.about-page {
-    background-image: url(./images/group_svg.png), url(./images/pink2.png);
-    background-repeat: no-repeat;
-    background-position: right;
-}
-
-.about-info {
-
+#about-section {
+    background-image: url(./images/CircleShape.png);
     background-position: right;
     background-repeat: no-repeat;
-}
-
-/* .about-img {
-    width: 562.5px;
-    height: 600px;
-    margin-top: 137px;
-} */
-
-.contact-btn {
-    clip-path: polygon(91% 2%, 95% 59%, 9% 62%, 1% 20%);
-    box-shadow: 10px 13px 15px #ccc;
-    background-color: #6698FF;
-    width: 239px;
-    height: 70px;
-
-}
-
-.gallery-section {
-    background-color: #1B1A1A;
-    background-image: url(./images/gallery-vector.png);
-    background-repeat: repeat;
-    background-position: top;
+    background-size: auto;
 }
 
 .gallery-div {
@@ -41,6 +14,13 @@
 .gallery-div div {
     width: 360px;
     height: 500px;
+}
+
+#my-gallery {
+    background-image: url(./images/gallery-vector.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 @media (max-width: 600px) {

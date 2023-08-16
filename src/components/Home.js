@@ -4,21 +4,11 @@ import imageTwo from "./images/banner-pic.png";
 import triangle from "./images/small-triangle.png";
 import ring from "./images/banner-ring.png";
 import adImg from "./images/ads.png";
-import blueBg from "./images/blueellipse.png";
-import ylbg from "./images/ylbg.png";
-import pinkBg from "./images/pinkBg.png";
 import aboutImg from "./images/About.png";
 import simble from "./images/gonok.png";
-import galleryVector from "./images/gallery-vector.png";
-import exhibitionTopRightImg from './images/gallery-bottom-pic.png';
-import exhibition1 from "./images/Exhibition (1).png";
-import exhibition2 from "./images/Exhibition (2).png";
-import exhibition3 from "./images/Exhibition (3).png";
-import exhibition4 from "./images/Exhibition (4).png";
-import exhibition5 from "./images/Exhibition (5).png";
-import exhibition6 from "./images/Exhibition (6).png";
-import exhibition7 from "./images/Exhibition (7).png";
 import ContactBtn from "./images/contactBtn.svg";
+import ExhibitionSection from "./ExhibitionSection";
+
 
 
 
@@ -111,12 +101,12 @@ const Home = () => {
 
       {/* Gallery Section */}
       <section id="my-gallery" className="lg:mt-[193px] mt-[182px]">
-        <div className="gallery-section ">
+        <div className="gallery-section " >
 
-          <div className="">
+          <div className="" >
             <h1 className="lg:text-[50px] text-[30px] text-white text-left text-bold">My Gallery</h1>
           </div>
-          <div className="lg:flex lg:justify-between">
+          <div className="lg:flex lg:justify-between" >
             <div className="lg:w-[774px] lg:mt-[40px] mt-[35px] lg:ml-14">
               <p className="text-left lg:text-[18px] text-[16px] text-white opacity-[0.70]">
                 In a laoreet purus. Integer turpis quam, laoreet id orci nec,
@@ -172,21 +162,8 @@ const Home = () => {
       {/* Gallery Section */}
 
       {/* Exhibition Section*/}
-      <section id="exhibition-section" className="lg:mt[273px] mt-[176px] ">
-        <div>
-          <div className="flex justify-between relative">
-            <div>
-              <h1 className="lg:text-[50px] text-[30px] text-white font-bold">Exhibition</h1>
-              <p className="lg:text-[18px] text-[16px] leading-[26px]  text-white opacity-[0.70] lg:w-[774px] lg:mt-10 mt-[35px]">
-                In a laoreet purus. Integer turpis quam, laoreet id orci nec, ultrices lacinia nunc. Aliquam erat vo, Aliquam pulvinar vestibulum blandit. Donec sed  nisl libero. Fusce dignissim luctus sem eu dapibus. P Vestibulum eu quam nec neque pellentesque efficitur id eget nisl.
-              </p>
-            </div>
-            <div className="lg:w-[187px] w-[90px] absolute right-[-20px] lg:right-0 bottom-[170px] lg:bottom-[130px]">
-              <img src={exhibitionTopRightImg} alt="" />
-            </div>
-          </div>
-        </div>
-      </section>
+      <ExhibitionSection></ExhibitionSection>
+
       {/* Exhibition Section*/}
     </div>
   );

@@ -101,7 +101,7 @@ function Header() {
             </Link>
           </div>
 
-          <div className='lg:rotate-90 lg:bg-blue-600 lg:absolute lg:left-[-12px] lg:top-[220px] lg:px-[12px] lg:py-[8px] lg:rounded-[5px] lg:w-[85px] lg:visible invisible'>
+          <div className='lg:rotate-90 lg:bg-[#6698ff80] lg:absolute lg:left-[-12px] lg:top-[220px] lg:px-[12px] lg:py-[8px] lg:rounded-[5px] lg:w-[85px] z-10 lg:visible invisible'>
             <span className='lg:text-[10px] font-semi-bold text-white'>FOLLOW ME</span>
           </div>
         </div>
