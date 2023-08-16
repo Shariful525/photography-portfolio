@@ -35,7 +35,7 @@ const Exhibition = () => {
               <Chckoutbtn></Chckoutbtn>
             </Link>
           </div>
-          <div className="relative bottom-[-120px]">
+          <div className="relative bottom-[-80px]">
             <img className="rounded-img" src={orange} alt=""></img>
           </div>
           <div className="w-[413px] right-side text-center right-div mt-[293px] relative bottom-[-70px] p-4">

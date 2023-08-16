@@ -2,6 +2,11 @@ import React from "react";
 import "../components/About.css";
 import cameraHold from "./images/cameraholdingpng.png";
 
+import orange from "./images/orange.jpg";
+import butterflyImg from "./images/butterflyImg.jpg";
+import camera from "./images/camera.png";
+import frogImg from "./images/frogImg.jpg";
+
 const About = () => {
   return (
     <div className="mx-auto">
@@ -66,8 +71,8 @@ const About = () => {
       {/* Exhibition gallary section start  */}
       <section className="max-w-[1240px] mx-auto">
         <div>
-          <h1 className="text-[50px] text-white">Exhibitions</h1>
-          <p className="t-color">
+          <h1 className="text-[50px] text-white mb-5">Exhibitions</h1>
+          <p className="t-color w-7/12 mb-14">
             In a laoreet purus. Integer turpis quam, laoreet id orci nec,
             ultrices lacinia nunc. Aliquam erat vo, Aliquam pulvinar vestibulum
             blandit. Donec sed nisl libero. Fusce dignissim luctus sem eu
@@ -87,14 +92,74 @@ const About = () => {
           <div className="h-[350px] w-[350px] bg-red-400 ">8</div>
         </div> */}
 
-        <div className="grid grid-cols-3 gap-4">
-          <div className=" img-grid row-span-2 bg-blue-200 p-4">1</div>
-          <div className="bg-green-200 p-4 img-grid">2</div>
-          <div className="bg-red-200 p-4 img-grid">3</div>
-          <div className="bg-yellow-200 p-4 col-span-2 img-grid">4</div>
-          <div className="bg-pink-200 p-4 img-grid">5</div>
-          <div className="bg-purple-200 p-4 img-grid">6</div>
-          <div className="bg-orange-200 p-4 img-grid">7</div>
+        <div className="grid grid-cols-3 gap-4 grid-rows-3 h-screen">
+          <div className="row-span-2 border-4 rounded-xl border-slate-900">
+            <img
+              className="w-full h-full object-cover  rounded-xl"
+              src={butterflyImg}
+              alt=""
+            />
+          </div>
+          <div
+            className=" border-4 rounded-xl border-slate-900
+          "
+          >
+            <img
+              className="w-full h-full object-cover rounded-xl "
+              src={orange}
+              alt=""
+            />
+          </div>
+          <div
+            className=" border-4 rounded-xl border-slate-900
+          "
+          >
+            <img
+              className="w-full h-full object-cover rounded-xl"
+              src={frogImg}
+              alt=""
+            />
+          </div>
+          <div
+            className=" border-4 rounded-xl border-slate-900
+           col-span-2"
+          >
+            <img
+              className="w-full h-full object-cover rounded-xl"
+              src={butterflyImg}
+              alt=""
+            />
+          </div>
+          <div
+            className=" border-4 rounded-xl border-slate-900
+           "
+          >
+            <img
+              className="w-full h-full object-cover rounded-xl "
+              src={butterflyImg}
+              alt=""
+            />
+          </div>
+          <div
+            className=" border-4 rounded-xl border-slate-900
+           "
+          >
+            <img
+              className="w-full h-full object-cover rounded-xl "
+              src={orange}
+              alt=""
+            />
+          </div>
+          <div
+            className=" border-4 rounded-xl border-slate-900
+           "
+          >
+            <img
+              className="w-full h-full object-cover rounded-xl"
+              src={frogImg}
+              alt=""
+            />
+          </div>
         </div>
       </section>
       {/* Exhibition gallary section end  */}

@@ -5,9 +5,19 @@
   height: 50px;
   width: 200px;
 }
-.img-grid {
+/* .img-grid {
   width: 394px;
   height: 365px;
   border-radius: 15px;
   border: 6px solid rgba(102, 152, 255, 0.1);
 }
+.grid-row-span-style {
+  border-radius: 15px;
+  border: 6px solid rgba(102, 152, 255, 0.1);
+  height: 365px;
+}
+.grid-col-span-style {
+  border-radius: 15px;
+  border: 6px solid rgba(102, 152, 255, 0.1);
+  width: 394px;
+} */
