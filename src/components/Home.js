@@ -18,10 +18,15 @@ import exhibition4 from "./images/Exhibition (4).png";
 import exhibition5 from "./images/Exhibition (5).png";
 import exhibition6 from "./images/Exhibition (6).png";
 import exhibition7 from "./images/Exhibition (7).png";
+import ContactBtn from "./images/contactBtn.svg";
 
 
 
 const Home = () => {
+
+  const contactme = () => {
+    console.log('Button Clicked');
+  }
   return (
     <div className="lg:mx-[100px] mt-[70px] mx-[22px] overflow-hidden">
 
@@ -45,7 +50,7 @@ const Home = () => {
           <div className="lg:mt-16 lg:absolute mt-4 lg:left-[-65px] lg:leading-normal">
             <h2 className="text-[#FFFFFF] text-[38px] font-semi-bold lg:text-left lg:text-6xl ">
               Photography helps <br />
-              <small className="font-bold text-[38px]">People to see</small>
+              <span className="font-bold ">People to see</span>
             </h2>
           </div>
 
@@ -95,7 +100,9 @@ const Home = () => {
               </p>
             </div>
             <div className="lg:mt-[90px] mt-[46px] lg:mx-0 mx-auto">
-
+              <button onClick={contactme}>
+                <img src={ContactBtn} alt="" />
+              </button>
             </div>
           </div>
         </div>
@@ -121,10 +128,10 @@ const Home = () => {
             </div>
             <div className="lg:flex gap-4 lg:items-center hidden">
               <div>
-                <a className="btn btn-outline btn-info" href="#slide-6">Prev</a>
+                <a className="btn btn-outline btn-info" href="#slide6">Prev</a>
               </div>
               <div>
-                <a className="btn btn-outline btn-success" href="#slide-4"  >Next</a>
+                <a className="btn btn-outline btn-success" href="#slide4"  >Next</a>
 
               </div>
             </div>

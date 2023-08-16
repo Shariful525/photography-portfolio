@@ -1,0 +1,12 @@
+@media (max-width: 600px) {
+    #mobile-menu {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    #menu-for-mobile div {
+
+        margin-bottom: 50px;
+    }
+}
