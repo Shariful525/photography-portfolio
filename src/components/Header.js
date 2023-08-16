@@ -18,7 +18,7 @@ function Header() {
 
   return (
     <div>
-      <nav className="lg:mx-[100px] mx-[20px] my-[20px] lg:my-[40px] lg:flex lg:justify-around relative">
+      <nav className="lg:mx-[100px] mx-[20px] my-[20px] lg:my-[40px] lg:flex lg:justify-around lg:relative">
         <div className="flex items-center justify-between">
           <div className="text-white lg:ml-[-190px]">
             <Link to='/'><img src={imageOne} alt='' /></Link>
@@ -38,56 +38,64 @@ function Header() {
           </div>
         </div>
         <div
-          className={`mt-[115px] ${isMenuOpen ? 'block' : 'hidden'} lg:flex lg:mt-0 lg:items-center lg:space-x-20 space-y-[50px]  `}
+          className={`mt-[115px] ${isMenuOpen ? 'block' : 'hidden'} lg:flex lg:mt-0 lg:items-center lg:space-x-20`} id='menu-for-mobile'
         >
-          <Link
-            to="/about"
-            className="block text-[30px] text-[700] text-white hover:text-gray-400 transition duration-300 text-center"
-          >
-            About
-          </Link>
-          <Link
-            to="/gallery"
-            className="block text-[30px] text-[700] text-white hover:text-gray-400 transition duration-300 text-center"
-          >
-            Gallery
-          </Link>
-          <Link
-            to="/exhibition"
-            className="block text-[30px] text-[700] text-white hover:text-gray-400 transition duration-300 text-center"
-          >
-            Exhibition
-          </Link>
-          <Link
-            to="/contact"
-            className="block text-[30px] text-[700] text-white hover:text-gray-400 transition duration-300 text-center"
-          >
-            Contact
-          </Link>
+          <div>
+            <Link
+              to="/about"
+              className="block text-[30px]  lg:text-[16px] lg:text-[500] text-[700]  hover:underline text-white text-center"
+            >
+              About
+            </Link>
+          </div>
+          <div>
+            <Link
+              to="/gallery"
+              className="block text-[30px] lg:text-[16px] lg:text-[500] text-[700] hover:underline text-white text-center"
+            >
+              Gallery
+            </Link>
+          </div>
+          <div>
+            <Link
+              to="/exhibition"
+              className="block text-[30px] lg:text-[16px] lg:text-[500] text-[700] hover:underline text-white text-center"
+            >
+              Exhibition
+            </Link>
+          </div>
+          <div>
+            <Link
+              to="/contact"
+              className="block text-[30px] lg:text-[16px] lg:text-[500] text-[700] hover:underline text-white text-center"
+            >
+              Contact
+            </Link>
+          </div>
 
         </div>
 
-        <div className="lg:w-[60px] mt-[206px] ml-[100px] lg:px-[20px] lg:pt-[20px] lg:pb-[62px] lg:bg-[#28293D] lg:rounded-[10px] lg:absolute lg:top-0 lg:right-0  relative" id='mobile-menu'>
+        <div className="lg:w-[60px] mt-[206px] ml-[100px] lg:px-[20px] lg:pt-[20px] lg:pb-[62px] lg:bg-[#28293D] lg:rounded-[10px] lg:absolute lg:top-[-200px] lg:right-0 lg:z-10  relative" id='mobile-menu'>
           <div className='lg:mb-[20px] w-[26px]'>
-            <Link className="text-white hover:text-gray-400 ">
+            <Link className="text-white ">
               <img src={twImg} alt="twitter logo" />
             </Link>
           </div>
 
           <div className='lg:mb-[20px] w-[26px]'>
-            <Link className="text-white hover:text-gray-400 ">
+            <Link className="text-white ">
               <img src={fbImg} alt="twitter logo" />
 
             </Link>
           </div>
           <div className='lg:mb-[20px] w-[26px]'>
-            <Link className="text-white hover:text-gray-400 ">
+            <Link className="text-white ">
               <img src={ytImg} alt="twitter logo" />
 
             </Link>
           </div>
           <div className='lg:mb-[20px] w-[26px]'>
-            <Link className="text-white hover:text-gray-400 ">
+            <Link className="text-white ">
               <img src={vImg} alt="twitter logo" />
 
             </Link>

@@ -3,7 +3,10 @@
         display: flex;
         justify-content: center;
         gap: 50px;
-        margin: ;
+    }
 
+    #menu-for-mobile div {
+
+        margin-bottom: 50px;
     }
 }
