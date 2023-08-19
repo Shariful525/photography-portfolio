@@ -18,9 +18,9 @@ function Header() {
 
   return (
     <div>
-      <nav className="lg:mx-[100px] mx-[20px] my-[20px] lg:my-[40px] lg:flex lg:justify-around lg:relative">
+      <nav className="lg:mx-[100px] mx-[20px] my-[20px] lg:my-[40px] lg:flex lg:justify-center lg:relative">
         <div className="flex items-center justify-between">
-          <div className="text-white lg:ml-[-190px]">
+          <div className="text-white lg:ml-[-390px]">
             <Link to='/'><img src={imageOne} alt='' /></Link>
           </div>
           <div className="lg:hidden">
@@ -38,7 +38,7 @@ function Header() {
           </div>
         </div>
         <div
-          className={`mt-[115px] ${isMenuOpen ? 'block' : 'hidden'} lg:flex lg:mt-0 lg:items-center lg:space-x-20`} id='menu-for-mobile'
+          className={`mt-[115px] ${isMenuOpen ? 'block' : 'hidden'}  lg:flex lg:mt-0 lg:items-center lg:space-x-20`} id='menu-for-mobile'
         >
           <div>
             <Link
