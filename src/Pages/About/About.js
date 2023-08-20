@@ -1,13 +1,13 @@
 import React from "react";
-import "../components/About.css";
-import cameraHold from "./images/cameraholdingpng.png";
+import "./About.css";
+import cameraHold from "../../Photos/images/cameraholdingpng.png";
 
-import orange from "./images/orange.jpg";
-import butterflyImg from "./images/butterflyImg.jpg";
-import frogImg from "./images/frogImg.jpg";
-import GalleryPhoto from "./GalleryPhoto";
-import ImageCarousel from "./ImageCarousel";
-import CarouselComponent from "./Carousel";
+import orange from "../../Photos/images/orange.jpg";
+import butterflyImg from "../../Photos/images/butterflyImg.jpg";
+import frogImg from "../../Photos/images/frogImg.jpg";
+import GalleryPhoto from "../../components/GalleryPhoto/GalleryPhoto";
+import ImageCarousel from "../../components/GalleryPhoto/GalleryPhoto";
+import CarouselComponent from "../../components/Carousel/Carousel";
 
 const About = () => {
   const images = [orange, butterflyImg, frogImg, orange];

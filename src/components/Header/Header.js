@@ -1,13 +1,13 @@
-import { useState } from 'react';
-import { FaTimes } from 'react-icons/fa';
-import imageOne from "./images/photography-logo.png";
-import menuBar from './images/menuBar.png'
-import { Link } from 'react-router-dom';
-import twImg from './images/twitter.png';
-import fbImg from './images/facebook.png';
-import ytImg from './images/yootube.png'
-import vImg from './images/v.png';
-import './Header.css';
+import { useState } from "react";
+import { FaTimes } from "react-icons/fa";
+import imageOne from "../../Photos/images/photography-logo.png";
+import menuBar from "../../Photos/images/menuBar.png";
+import { Link } from "react-router-dom";
+import twImg from "../../Photos/images/twitter.png";
+import fbImg from "../../Photos/images/facebook.png";
+import ytImg from "../../Photos/images/yootube.png";
+import vImg from "../../Photos/images/v.png";
+import "./Header.css";
 
 function Header() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -21,7 +21,9 @@ function Header() {
       <nav className="lg:mx-[100px] mx-[20px] my-[20px] lg:my-[40px] lg:flex lg:justify-center lg:relative">
         <div className="flex items-center justify-between">
           <div className="text-white lg:ml-[-390px]">
-            <Link to='/'><img src={imageOne} alt='' /></Link>
+            <Link to="/">
+              <img src={imageOne} alt="" />
+            </Link>
           </div>
           <div className="lg:hidden">
             <button
@@ -32,13 +34,16 @@ function Header() {
               {isMenuOpen ? (
                 <FaTimes className="h-6 w-6 fill-current" />
               ) : (
-                <img src={menuBar} alt=''></img>
+                <img src={menuBar} alt=""></img>
               )}
             </button>
           </div>
         </div>
         <div
-          className={`mt-[115px] ${isMenuOpen ? 'block' : 'hidden'}  lg:flex lg:mt-0 lg:items-center lg:space-x-20`} id='menu-for-mobile'
+          className={`mt-[115px] ${
+            isMenuOpen ? "block" : "hidden"
+          }  lg:flex lg:mt-0 lg:items-center lg:space-x-20`}
+          id="menu-for-mobile"
         >
           <div>
             <Link
@@ -72,37 +77,38 @@ function Header() {
               Contact
             </Link>
           </div>
-
         </div>
 
-        <div className="lg:w-[60px] mt-[206px] ml-[100px] lg:px-[20px] lg:pt-[20px] lg:pb-[62px] lg:bg-[#28293D] lg:rounded-[10px] lg:absolute lg:top-[-200px] lg:right-0 lg:z-10  relative" id='mobile-menu'>
-          <div className='lg:mb-[20px] w-[26px]'>
+        <div
+          className="lg:w-[60px] mt-[206px] ml-[100px] lg:px-[20px] lg:pt-[20px] lg:pb-[62px] lg:bg-[#28293D] lg:rounded-[10px] lg:absolute lg:top-[-200px] lg:right-0 lg:z-10  relative"
+          id="mobile-menu"
+        >
+          <div className="lg:mb-[20px] w-[26px]">
             <Link className="text-white ">
               <img src={twImg} alt="twitter logo" />
             </Link>
           </div>
 
-          <div className='lg:mb-[20px] w-[26px]'>
+          <div className="lg:mb-[20px] w-[26px]">
             <Link className="text-white ">
               <img src={fbImg} alt="twitter logo" />
-
             </Link>
           </div>
-          <div className='lg:mb-[20px] w-[26px]'>
+          <div className="lg:mb-[20px] w-[26px]">
             <Link className="text-white ">
               <img src={ytImg} alt="twitter logo" />
-
             </Link>
           </div>
-          <div className='lg:mb-[20px] w-[26px]'>
+          <div className="lg:mb-[20px] w-[26px]">
             <Link className="text-white ">
               <img src={vImg} alt="twitter logo" />
-
             </Link>
           </div>
 
-          <div className='lg:rotate-90 lg:bg-[#6698ff80] lg:absolute lg:left-[-12px] lg:top-[220px] lg:px-[12px] lg:py-[8px] lg:rounded-[5px] lg:w-[85px] z-10 lg:visible invisible'>
-            <span className='lg:text-[10px] font-semi-bold text-white'>FOLLOW ME</span>
+          <div className="lg:rotate-90 lg:bg-[#6698ff80] lg:absolute lg:left-[-12px] lg:top-[220px] lg:px-[12px] lg:py-[8px] lg:rounded-[5px] lg:w-[85px] z-10 lg:visible invisible">
+            <span className="lg:text-[10px] font-semi-bold text-white">
+              FOLLOW ME
+            </span>
           </div>
         </div>
       </nav>
@@ -111,19 +117,3 @@ function Header() {
 }
 
 export default Header;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

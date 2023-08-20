@@ -1,12 +1,13 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import Main from "./layout/Main";
-import About from "./components/About";
-import Exhibition from "./components/Exhibition";
-import Gallery from "./components/Gallery";
-import Contact from "./components/Contact";
-import Home from "./components/Home";
-import Notfound from "./components/Notfound";
+
+import Exhibition from "./Pages/Exhibition/Exhibition";
+import Gallery from "./Pages/Gallary/Gallery";
+import Contact from "./Pages/Contact/Contact";
+import Home from "./Pages/Home/Home";
+import Notfound from "./Pages/NotFound/Notfound";
+import About from "./Pages/About/About";
 
 function App() {
   const router = createBrowserRouter([

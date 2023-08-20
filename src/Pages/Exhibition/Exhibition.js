@@ -1,12 +1,12 @@
 import React from "react";
 import "./Exhibition.css";
-import addImg from "./images/add.png";
-import mukutImg from "./images/mukut.png";
-import orange from "./images/orange.jpg";
-import butterflyImg from "./images/butterflyImg.jpg";
-import frogImg1 from "./images/frogImg.jpg";
+import addImg from "../../Photos/images/add.png";
+import mukutImg from "../../Photos/images/mukut.png";
+import orange from "../../Photos/images/orange.jpg";
+import butterflyImg from "../../Photos/images/butterflyImg.jpg";
+import frogImg1 from "../../Photos/images/frogImg.jpg";
 import { Link } from "react-router-dom";
-import Chckoutbtn from "./Chckoutbtn";
+import Chckoutbtn from "../../components/Button/Chckoutbtn";
 
 const Exhibition = () => {
   return (

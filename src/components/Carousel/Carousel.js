@@ -1,6 +1,6 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import CarouselCard from "./CarouselCard";
+import CarouselCard from "./CarouselCard/CarouselCard";
 import "./Carousel.css";
 const CarouselComponent = () => {
   const imgUrls = [

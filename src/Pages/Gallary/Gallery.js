@@ -2,41 +2,41 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 import "./galleryCSS.css";
-import galleryImg1 from "./images/gallery-bottom-pic.png";
-import galleryAdd from "./images/add.png";
+import galleryImg1 from "../../Photos/images/gallery-bottom-pic.png";
+import galleryAdd from "../../Photos/images/add.png";
 
-import img1 from "./gallery/gallery (1).png";
+import img1 from "../../Photos/gallery/gallery (1).png";
 
-import img2 from "./gallery/gallery (2).png";
+import img2 from "../../Photos/gallery/gallery (2).png";
 
-import img3 from "./gallery/Rectangle 100.png";
+import img3 from "../../Photos/gallery/Rectangle 100.png";
 
-import img4 from "./gallery/gallery (4).png";
+import img4 from "../../Photos/gallery/gallery (4).png";
 
-import img5 from "./gallery/gallery (5).png";
+import img5 from "../../Photos/gallery/gallery (5).png";
 
-import img6 from "./gallery/gallery (6).png";
+import img6 from "../../Photos/gallery/gallery (6).png";
 
-import img7 from "./gallery/gallery (7).png";
+import img7 from "../../Photos/gallery/gallery (7).png";
 
-import img8 from "./gallery/gallery (8).png";
+import img8 from "../../Photos/gallery/gallery (8).png";
 
-import img9 from "./gallery/gallery (9).png";
+import img9 from "../../Photos/gallery/gallery (9).png";
 
-import img10 from "./gallery/gallery (10).png";
+import img10 from "../../Photos/gallery/gallery (10).png";
 
-import img11 from "./gallery/gallery (11).png";
+import img11 from "../../Photos/gallery/gallery (11).png";
 
-import img12 from "./gallery/gallery (12).png";
+import img12 from "../../Photos/gallery/gallery (12).png";
 
-import img13 from "./gallery/gallery (13).png";
+import img13 from "../../Photos/gallery/gallery (13).png";
 
-import img14 from "./gallery/gallery (14).png";
+import img14 from "../../Photos/gallery/gallery (14).png";
 
-import img15 from "./gallery/Rectangle 101.png";
+import img15 from "../../Photos/gallery/Rectangle 101.png";
 
-import img16 from "./gallery/Rectangle 103.png";
-import CarouselComponent from "./Carousel";
+import img16 from "../../Photos/gallery/Rectangle 103.png";
+import CarouselComponent from "../../components/Carousel/Carousel";
 
 const Gallery = () => {
   return (

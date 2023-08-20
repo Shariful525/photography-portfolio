@@ -1,14 +1,14 @@
 import React from "react";
 
-import contact from "./images/contac.png";
-import officeIcon from "./images/office.png";
-import callIcon from "./images/call.png";
-import emailIcon from "./images/msz.png";
-import mapTp from "./images/map-tp.png";
-import mapSider from "./images/gallery-bottom-pic.png";
-import addPng from "./images/add.png";
-import formTop from './images/formtopImg.png';
-import "../components/Contact.css";
+import contact from "../../Photos/images/contac.png";
+import officeIcon from "../../Photos/images/office.png";
+import callIcon from "../../Photos/images/call.png";
+import emailIcon from "../../Photos/images/msz.png";
+import mapTp from "../../Photos/images/map-tp.png";
+import mapSider from "../../Photos/images/gallery-bottom-pic.png";
+import addPng from "../../Photos/images/add.png";
+import formTop from "../../Photos/images/formtopImg.png";
+import "./Contact.css";
 
 const Contact = () => {
   return (
@@ -79,34 +79,58 @@ const Contact = () => {
           {/* bio */}
 
           <div className=" lg:ml-[-600px] border-x-amber-50 lg:mt-[-400px] md:ml-[-400px] mx-5 mt-10 ">
-
             <div className="flex justify-between items-center">
               <div className="flex flex-col gap-5 ">
                 <div className="flex text-left gap-5 ">
                   <div>
-                    <img className="lg:w-[70px] w-[60px]" src={officeIcon} alt="" />
+                    <img
+                      className="lg:w-[70px] w-[60px]"
+                      src={officeIcon}
+                      alt=""
+                    />
                   </div>
                   <div>
-                    <h5 className="text-white text-[18px] font-[700] ">My Office</h5>
-                    <p className="text-[16px] text-[#ffffffb3]">99 S.1, Jombio Park Pekanbaru<br /> 2818290. Bangladesh</p>
+                    <h5 className="text-white text-[18px] font-[700] ">
+                      My Office
+                    </h5>
+                    <p className="text-[16px] text-[#ffffffb3]">
+                      99 S.1, Jombio Park Pekanbaru
+                      <br /> 2818290. Bangladesh
+                    </p>
                   </div>
                 </div>
                 <div className="flex text-left gap-5 ">
-                  <div >
-                    <img className="lg:w-[70px] w-[60px]" src={callIcon} alt="" />
+                  <div>
+                    <img
+                      className="lg:w-[70px] w-[60px]"
+                      src={callIcon}
+                      alt=""
+                    />
                   </div>
                   <div>
-                    <h5 className="text-white text-[18px] font-[700]">Phone Number</h5>
-                    <p className="text-[16px] text-[#ffffffb3]">+88 018507 11231</p>
+                    <h5 className="text-white text-[18px] font-[700]">
+                      Phone Number
+                    </h5>
+                    <p className="text-[16px] text-[#ffffffb3]">
+                      +88 018507 11231
+                    </p>
                   </div>
                 </div>
                 <div className="flex text-left gap-5 ">
-                  <div >
-                    <img className="lg:w-[70px] w-[60px]" src={emailIcon} alt="" />
+                  <div>
+                    <img
+                      className="lg:w-[70px] w-[60px]"
+                      src={emailIcon}
+                      alt=""
+                    />
                   </div>
                   <div>
-                    <h5 className="text-white text-[18px] font-[700]">Email Address</h5>
-                    <p className="text-[16px] text-[#ffffffb3]">hello@expertsquad.net</p>
+                    <h5 className="text-white text-[18px] font-[700]">
+                      Email Address
+                    </h5>
+                    <p className="text-[16px] text-[#ffffffb3]">
+                      hello@expertsquad.net
+                    </p>
                   </div>
                 </div>
               </div>
@@ -120,7 +144,6 @@ const Contact = () => {
 
       {/* Find Me on google */}
 
-
       <div className="mt-[222px] ">
         <div className="flex justify-between items-center mx-[100px] lg:flex-row-reverse relative">
           <div id="mapslider">
@@ -128,11 +151,11 @@ const Contact = () => {
           </div>
           <div id="map-head">
             <img className="lg:ml-28 ml-16" src={mapTp} alt="" />
-            <h1 className="lg:text-[50px] text-[35px] text-[#FFF] ">Google <span>Map</span></h1>
+            <h1 className="lg:text-[50px] text-[35px] text-[#FFF] ">
+              Google <span>Map</span>
+            </h1>
           </div>
-          <div>
-
-          </div>
+          <div></div>
         </div>
         <div className=" mt-[70px] mb-[292px]">
           <iframe
@@ -143,9 +166,8 @@ const Contact = () => {
             height="450"
             className="mx-auto rounded-[20px] border-8 border-[#6698ff1a] lg:h-[450px] h-[280px]"
             loading="fast"
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
     </div>

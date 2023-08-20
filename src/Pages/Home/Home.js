@@ -1,14 +1,14 @@
 import React from "react";
-import "../components/Home.css";
-import imageTwo from "./images/banner-pic.png";
-import triangle from "./images/small-triangle.png";
-import ring from "./images/banner-ring.png";
-import adImg from "./images/ads.png";
-import aboutImg from "./images/About.png";
-import simble from "./images/gonok.png";
-import ContactBtn from "./images/contactBtn.svg";
-import GalleryPhoto from "./GalleryPhoto";
-import CarouselComponent from "./Carousel";
+import "./Home.css";
+import imageTwo from "../../Photos/images/banner-pic.png";
+import triangle from "../../Photos/images/small-triangle.png";
+import ring from "../../Photos/images/banner-ring.png";
+import adImg from "../../Photos/images/ads.png";
+import aboutImg from "../../Photos/images/About.png";
+import simble from "../../Photos/images/gonok.png";
+import ContactBtn from "../../Photos/images/contactBtn.svg";
+import GalleryPhoto from "../../components/GalleryPhoto/GalleryPhoto";
+import CarouselComponent from "../../components/Carousel/Carousel";
 
 const Home = () => {
   const contactme = () => {
@@ -38,7 +38,7 @@ const Home = () => {
           </div>
 
           <div className="lg:mt-16 lg:absolute mt-4 lg:left-[-65px] lg:leading-normal">
-            <h2 className="text-[#FFFFFF] text-[38px] font-semi-bold lg:text-left lg:text-6xl ">
+            <h2 className="text-[#FFFFFF] text-[clamp(30px,3vw,60px)] font-semi-bold lg:text-left  ">
               Photography helps <br />
               <span className="font-bold ">People to see</span>
             </h2>

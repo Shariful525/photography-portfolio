@@ -1,0 +1,38 @@
+#about-section {
+  background-image: url(../../Photos/images/CircleShape.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.gallery-div {
+  margin: 80px 130px;
+  display: flex;
+  gap: 40px;
+}
+
+.gallery-div div {
+  width: 360px;
+  height: 500px;
+}
+
+#my-gallery {
+  background-image: url(../../Photos/images/gallery-vector.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (max-width: 600px) {
+  .home-page-top-banner {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #ring {
+    position: absolute;
+
+    right: -100px;
+    bottom: 350px;
+  }
+}

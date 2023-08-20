@@ -1,12 +1,12 @@
 import React from "react";
-import exhibitionTopRightImg from "./images/gallery-bottom-pic.png";
-import exhibition1 from "./images/Exhibition (1).png";
-import exhibition2 from "./images/Exhibition (2).png";
-import exhibition3 from "./images/Exhibition (3).png";
-import exhibition4 from "./images/Exhibition (4).png";
-import exhibition5 from "./images/Exhibition (5).png";
-import exhibition6 from "./images/Exhibition (6).png";
-import exhibition7 from "./images/Exhibition (7).png";
+import exhibitionTopRightImg from "../../Photos/images/gallery-bottom-pic.png";
+import exhibition1 from "../../Photos/images/Exhibition (1).png";
+import exhibition2 from "../../Photos/images/Exhibition (2).png";
+import exhibition3 from "../../Photos/images/Exhibition (3).png";
+import exhibition4 from "../../Photos/images/Exhibition (4).png";
+import exhibition5 from "../../Photos/images/Exhibition (5).png";
+import exhibition6 from "../../Photos/images/Exhibition (6).png";
+import exhibition7 from "../../Photos/images/Exhibition (7).png";
 
 const GalleryPhoto = () => {
   return (

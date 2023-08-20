@@ -1,29 +1,29 @@
 /* .left-col {
-  background-image: url(./images//pink2.png);
+  background-image: url(../../Photos/images//pink2.png);
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .exhi-top {
-  background-image: url(./images/ylbg.png);
+  background-image: url(../../Photos/images/ylbg.png);
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .right-div {
-  background-image: url(./images//pink2.png);
+  background-image: url(../../Photos/images//pink2.png);
   background-position: center;
   background-repeat: no-repeat;
 } */
 
 .exhibitionBg {
-  background-image: url(./images/gallery-vector.png);
+  background-image: url(../../Photos/images/gallery-vector.png);
   background-position: top;
   background-repeat: no-repeat;
 }
 
 .tpbg {
-  background-image: url(./images/group_svg.png);
+  background-image: url(../../Photos/images/group_svg.png);
 }
 .t-color {
   color: rgba(255, 255, 255, 0.7);
