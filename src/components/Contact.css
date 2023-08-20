@@ -1,30 +1,45 @@
-.message-card{
-border-radius: 20px;
-background: rgba(255, 255, 255, 0.06);
-backdrop-filter: blur(25px);
+.message-card {
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(25px);
 }
 
 
-.send-message{
+.send-message {
     border-width: 1.5px;
     border-style: solid;
     border-image: linear-gradient(to right, #6600CC, #DDA5E9) 1;
     background: transparent;
     color: #FFFF;
 }
-.send-message:hover{
+
+.send-message:hover {
     border-radius: 0%;
     background: linear-gradient(to right, #6600CC, #DDA5E9);
-   
+
 }
-.contact-page{
+
+.contact-page {
     background: url(./images/gallery-vector.png);
-    
-        background-position: center;
+
+    background-position: center;
 }
-.contact-page-down{
-background: url(./images/gallery-vector.png);
+
+.contact-page-down {
+    background: url(./images/gallery-vector.png);
 
     background-position: bottom;
 }
 
+
+@media (max-width: 600px) {
+    #mapslider {
+        position: absolute;
+        left: -115px;
+        top: -50px;
+    }
+
+    #map-head {
+        margin-left: 90px;
+    }
+}
