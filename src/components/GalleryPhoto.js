@@ -10,7 +10,10 @@ import exhibition7 from "./images/Exhibition (7).png";
 
 const GalleryPhoto = () => {
   return (
-    <section id="exhibition-section" className="lg:mt[273px] mt-[176px] ">
+    <section
+      id="exhibition-section"
+      className="lg:mt[273px] mt-[176px] max-w-[1240px] mx-auto"
+    >
       <div>
         <div className="flex justify-between relative">
           <div>
@@ -25,76 +28,76 @@ const GalleryPhoto = () => {
               efficitur id eget nisl.
             </p>
           </div>
-          <div className="lg:w-[187px] w-[90px] absolute right-[-20px] lg:right-0 bottom-[170px] lg:bottom-[130px]">
+          <div className=" ring-animate lg:w-[187px] w-[90px] absolute right-[-20px] lg:right-0 bottom-[170px] lg:bottom-[130px]">
             <img src={exhibitionTopRightImg} alt="" />
           </div>
         </div>
       </div>
 
       <div className="grid grid-cols-3 gap-4 grid-rows-3 h-screen mt-[150px] mb-[219px]">
-        <div className="row-span-2 border-4 rounded-xl border-slate-900">
+        <div className="row-span-2 border-4 rounded-[16px] border-slate-900">
           <img
-            className="w-full h-full object-cover  rounded-xl"
+            className="w-full h-full object-cover  rounded-[16px]"
             src={exhibition1}
             alt=""
           />
         </div>
         <div
-          className=" border-4 rounded-xl border-slate-900
+          className=" border-4 rounded-[16px] border-slate-900
           "
         >
           <img
-            className="w-full h-full object-cover rounded-xl "
+            className="w-full h-full object-cover rounded-[16px] "
             src={exhibition7}
             alt=""
           />
         </div>
         <div
-          className=" border-4 rounded-xl border-slate-900
+          className=" border-4 rounded-[16px] border-slate-900
           "
         >
           <img
-            className="w-full h-full object-cover rounded-xl"
+            className="w-full h-full object-cover rounded-[16px]"
             src={exhibition6}
             alt=""
           />
         </div>
         <div
-          className=" border-4 rounded-xl border-slate-900
+          className=" border-4 rounded-[16px] border-slate-900
            col-span-2"
         >
           <img
-            className="w-full h-full object-cover rounded-xl"
+            className="w-full h-full object-cover rounded-[16px]"
             src={exhibition5}
             alt=""
           />
         </div>
         <div
-          className=" border-4 rounded-xl border-slate-900
+          className=" border-4 rounded-[16px] border-slate-900
            "
         >
           <img
-            className="w-full h-full object-cover rounded-xl "
+            className="w-full h-full object-cover rounded-[16px] "
             src={exhibition4}
             alt=""
           />
         </div>
         <div
-          className=" border-4 rounded-xl border-slate-900
+          className=" border-4 rounded-[16px] border-slate-900
            "
         >
           <img
-            className="w-full h-full object-cover rounded-xl "
+            className="w-full h-full object-cover rounded-[16px] "
             src={exhibition3}
             alt=""
           />
         </div>
         <div
-          className=" border-4 rounded-xl border-slate-900
+          className=" border-4 rounded-[16px] border-slate-900
            "
         >
           <img
-            className="w-full h-full object-cover rounded-xl"
+            className="w-full h-full object-cover rounded-[16px]"
             src={exhibition2}
             alt=""
           />

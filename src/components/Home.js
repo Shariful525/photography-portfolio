@@ -53,13 +53,14 @@ const Home = () => {
             </p>
           </div>
         </div>
-        <div className="lg:absolute lg:right-0 lg:bottom-0" id="ring">
+        <div
+          className="lg:absolute lg:right-0 lg:bottom-0 ring-animate"
+          id="ring"
+        >
           <img className="lg:w-[223px]" src={ring} alt="" />
         </div>
       </div>
       {/* Hero Section */}
-
-      <CarouselComponent></CarouselComponent>
 
       {/* About Section */}
       <section id="about-section" className="bg-[#1B1A1A] mt-[292px]">
@@ -120,82 +121,9 @@ const Home = () => {
                 pellentesque efficitur id eget nisl.
               </p>
             </div>
-            <div className="lg:flex gap-4 lg:items-center hidden">
-              <div>
-                <a className="btn btn-outline btn-info" href="#slide6">
-                  Prev
-                </a>
-              </div>
-              <div>
-                <a className="btn btn-outline btn-success" href="#slide4">
-                  Next
-                </a>
-              </div>
-            </div>
           </div>
+          <CarouselComponent></CarouselComponent>
 
-          <div className="carousel w-full gap-10 mt-[80px] ">
-            <div
-              id="slide1"
-              className="carousel-item relative lg:w-[400px] lg:h-[500px] rounded-[20px] border-[#6698ff1a] border-[8px] "
-            >
-              <img
-                src="https://images.pexels.com/photos/10034617/pexels-photo-10034617.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="pizza"
-                className="lg:w-[485px] lg:h-[500px] w-[340px] h-[435px] rounded-[20px]"
-              />
-            </div>
-            <div
-              id="slide2"
-              className="carousel-item relative lg:w-[400px] lg:h-[500px] rounded-[20px] border-[#6698ff1a] border-[8px]"
-            >
-              <img
-                src="https://images.pexels.com/photos/17887967/pexels-photo-17887967.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="pizza"
-                className="lg:w-[485px] lg:h-[500px] w-[340px] h-[435px] rounded-[20px]"
-              />
-            </div>
-            <div
-              id="slide3"
-              className="carousel-item relative lg:w-[400px] lg:h-[500px] rounded-[20px] border-[#6698ff1a] border-[8px]"
-            >
-              <img
-                src="https://images.pexels.com/photos/9336369/pexels-photo-9336369.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="pizza"
-                className="lg:w-[485px] lg:h-[500px] w-[340px] h-[435px] rounded-[20px]"
-              />
-            </div>
-            <div
-              id="slide4"
-              className="carousel-item relative lg:w-[400px] lg:h-[500px] rounded-[20px] border-[#6698ff1a] border-[8px]"
-            >
-              <img
-                src="https://images.pexels.com/photos/12043012/pexels-photo-12043012.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="pizza"
-                className="lg:w-[485px] lg:h-[500px] w-[340px] h-[435px] rounded-[20px]"
-              />
-            </div>
-            <div
-              id="slide5"
-              className="carousel-item relative lg:w-[400px] lg:h-[500px] rounded-[20px] border-[#6698ff1a] border-[8px]"
-            >
-              <img
-                src="https://images.pexels.com/photos/17586062/pexels-photo-17586062/free-photo-of-blossoming-houseplants-on-house-balcony.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="pizza"
-                className="lg:w-[485px] lg:h-[500px] w-[340px] h-[435px] rounded-[20px]"
-              />
-            </div>
-            <div
-              id="slide6"
-              className="carousel-item relative lg:w-[400px] lg:h-[500px] rounded-[20px] border-[#6698ff1a] border-[8px]"
-            >
-              <img
-                src="https://images.pexels.com/photos/17910786/pexels-photo-17910786.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="pizza"
-                className="lg:w-[485px] lg:h-[500px] w-[340px] h-[435px] rounded-[20px]"
-              />
-            </div>
-          </div>
           <div className="flex justify-center gap-5 mt-10 lg:hidden">
             <a className="btn btn-outline btn-info" href="#slide1">
               Prev

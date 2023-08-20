@@ -18,9 +18,9 @@
   margin: 0 auto;
 }
 .ring-animate {
-  animation: rotade 4s infinite;
+  animation: rotate 4s infinite;
 }
-@keyframes rotade {
+@keyframes rotate {
   100% {
     rotate: 360deg;
   }
