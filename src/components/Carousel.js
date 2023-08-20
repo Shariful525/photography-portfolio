@@ -1,7 +1,7 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import CarouselCard from "./CarouselCard";
-
+import "./Carousel.css";
 const CarouselComponent = () => {
   const imgUrls = [
     "https://images.pexels.com/photos/10034617/pexels-photo-10034617.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -16,9 +16,9 @@ const CarouselComponent = () => {
       additionalTransfrom={0}
       arrows
       autoPlay
-      autoPlaySpeed={1000}
+      autoPlaySpeed={3000}
       centerMode={false}
-      className=""
+      className="crousel-container"
       containerClass="container-with-dots"
       dotListClass=""
       draggable

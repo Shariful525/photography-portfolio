@@ -1,0 +1,19 @@
+.react-multi-carousel-list::before {
+  content: "";
+  color: black;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  z-index: 20;
+  background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.01));
+}
+.crousel-container ul {
+  gap: 15px;
+}
+.react-multi-carousel-list {
+  max-width: 1240px;
+  margin: 0 auto;
+  margin-top: 70px;
+}
