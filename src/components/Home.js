@@ -7,23 +7,23 @@ import adImg from "./images/ads.png";
 import aboutImg from "./images/About.png";
 import simble from "./images/gonok.png";
 import ContactBtn from "./images/contactBtn.svg";
-import ExhibitionSection from "./ExhibitionSection";
-
-
-
+import GalleryPhoto from "./GalleryPhoto";
+import CarouselComponent from "./Carousel";
 
 const Home = () => {
-
   const contactme = () => {
-    console.log('Button Clicked');
-  }
+    console.log("Button Clicked");
+  };
   return (
     <div className="lg:mx-[100px] mt-[70px] mx-[22px] overflow-hidden">
-
       {/* Hero Section */}
       <div className="lg:flex lg:justify-between relative lg:gap-8 home-page-top-banner ">
-        <div >
-          <img className="lg:w-[388px] w-[368px] h-[440px] lg:h-[463px] mx-auto " src={imageTwo} alt="banner-img" />
+        <div>
+          <img
+            className="lg:w-[388px] w-[368px] h-[440px] lg:h-[463px] mx-auto "
+            src={imageTwo}
+            alt="banner-img"
+          />
         </div>
         <div className="absolute bottom-[-250px] left-[120px] lg:bottom-[-150px] lg:left-[450px] lg:w-[328px] w-[220px] h-[183px]">
           <img src={adImg} alt="" />
@@ -44,12 +44,12 @@ const Home = () => {
             </h2>
           </div>
 
-          <div className=" mt-4 opacity-50 text-[#FFF] lg:text-[18px] text-[14px] lg:text-left lg:ml-[70px] lg:w-[500px] mb-[51px]">
+          <div className=" mt-4 opacity-50 t-color lg:text-[18px] text-[14px] lg:text-left lg:ml-[70px] lg:w-[500px] mb-[51px]">
             <p>
-              Do you have an idea but are struggling to execute it
-              because of the complexities involved? Don't worry. We
-              are here to solve your problem. We help entrepreneurs
-              convert their ideas into products and services.
+              Do you have an idea but are struggling to execute it because of
+              the complexities involved? Don't worry. We are here to solve your
+              problem. We help entrepreneurs convert their ideas into products
+              and services.
             </p>
           </div>
         </div>
@@ -59,13 +59,16 @@ const Home = () => {
       </div>
       {/* Hero Section */}
 
+      <CarouselComponent></CarouselComponent>
+
       {/* About Section */}
       <section id="about-section" className="bg-[#1B1A1A] mt-[292px]">
         <div className="flex flex-col lg:flex-row lg:items-center">
           <div className="lg:w-6/12 mx-auto">
             <div className="lg:mb-[73px] mb-[52px]">
               <h3 className="text-white lg:text-left lg:text-[50px] text-[27px]">
-                About <span className="text-bold lg:text-[50px] ">Rasel Khan</span>
+                About{" "}
+                <span className="text-bold lg:text-[50px] ">Rasel Khan</span>
               </h3>
             </div>
             <div className="lg:w-[562px] w-[384px]">
@@ -77,7 +80,7 @@ const Home = () => {
               <img className="w-[94px]" src={simble} alt="null" />
             </div>
             <div>
-              <p className="lg:text-[18px] lg:text-left text-center z-[1]">
+              <p className="lg:text-[18px] lg:text-left text-center z-[1] t-color">
                 In a laoreet purus. Integer turpis quam, laoreet id orci nec,
                 ultrices lacinia nunc. Aliquam erat vo, Aliquam pulvinar
                 vestibulum blandit. Donec sed nisl libero. Fusce dignissim
@@ -85,8 +88,8 @@ const Home = () => {
                 pellentesque efficitur id eget nisl. Proin porta est convallis
                 lacus bl Donec sed erat ut magna suscipit mattis. Aliquam erat
                 volutpat. Morbi in orci risus. Donec pretium f Aliquam porta
-                nisl dolor, molestie pellentesque elit molestie in. Morbi
-                metus neque, elementum ullam
+                nisl dolor, molestie pellentesque elit molestie in. Morbi metus
+                neque, elementum ullam
               </p>
             </div>
             <div className="lg:mt-[90px] mt-[46px] lg:mx-0 mx-auto">
@@ -101,14 +104,15 @@ const Home = () => {
 
       {/* Gallery Section */}
       <section id="my-gallery" className="lg:mt-[193px] mt-[182px]">
-        <div className="gallery-section " >
-
-          <div className="" >
-            <h1 className="lg:text-[50px] text-[30px] text-white text-left text-bold">My Gallery</h1>
+        <div className="gallery-section ">
+          <div className="">
+            <h1 className="lg:text-[50px] text-[30px] text-white text-left text-bold">
+              My Gallery
+            </h1>
           </div>
-          <div className="lg:flex lg:justify-between" >
+          <div className="lg:flex lg:justify-between">
             <div className="lg:w-[774px] lg:mt-[40px] mt-[35px] lg:ml-14">
-              <p className="text-left lg:text-[18px] text-[16px] text-white opacity-[0.70]">
+              <p className="text-left lg:text-[18px] text-[16px] t-color opacity-[0.70]">
                 In a laoreet purus. Integer turpis quam, laoreet id orci nec,
                 ultrices lacinia nunc. Aliquam erat vo, Aliquam pulvinar
                 vestibulum blandit. Donec sed nisl libero. Fusce dignissim
@@ -118,51 +122,94 @@ const Home = () => {
             </div>
             <div className="lg:flex gap-4 lg:items-center hidden">
               <div>
-                <a className="btn btn-outline btn-info" href="#slide6">Prev</a>
+                <a className="btn btn-outline btn-info" href="#slide6">
+                  Prev
+                </a>
               </div>
               <div>
-                <a className="btn btn-outline btn-success" href="#slide4"  >Next</a>
-
+                <a className="btn btn-outline btn-success" href="#slide4">
+                  Next
+                </a>
               </div>
             </div>
           </div>
 
           <div className="carousel w-full gap-10 mt-[80px] ">
-            <div id="slide1" className="carousel-item relative lg:w-[400px] lg:h-[500px] rounded-[20px] border-[#6698ff1a] border-[8px] ">
-              <img src="https://images.pexels.com/photos/10034617/pexels-photo-10034617.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt='pizza' className="lg:w-[485px] lg:h-[500px] w-[340px] h-[435px] rounded-[20px]" />
-
+            <div
+              id="slide1"
+              className="carousel-item relative lg:w-[400px] lg:h-[500px] rounded-[20px] border-[#6698ff1a] border-[8px] "
+            >
+              <img
+                src="https://images.pexels.com/photos/10034617/pexels-photo-10034617.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="pizza"
+                className="lg:w-[485px] lg:h-[500px] w-[340px] h-[435px] rounded-[20px]"
+              />
             </div>
-            <div id="slide2" className="carousel-item relative lg:w-[400px] lg:h-[500px] rounded-[20px] border-[#6698ff1a] border-[8px]">
-              <img src="https://images.pexels.com/photos/17887967/pexels-photo-17887967.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt='pizza' className="lg:w-[485px] lg:h-[500px] w-[340px] h-[435px] rounded-[20px]" />
-
+            <div
+              id="slide2"
+              className="carousel-item relative lg:w-[400px] lg:h-[500px] rounded-[20px] border-[#6698ff1a] border-[8px]"
+            >
+              <img
+                src="https://images.pexels.com/photos/17887967/pexels-photo-17887967.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="pizza"
+                className="lg:w-[485px] lg:h-[500px] w-[340px] h-[435px] rounded-[20px]"
+              />
             </div>
-            <div id="slide3" className="carousel-item relative lg:w-[400px] lg:h-[500px] rounded-[20px] border-[#6698ff1a] border-[8px]">
-              <img src="https://images.pexels.com/photos/9336369/pexels-photo-9336369.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt='pizza' className="lg:w-[485px] lg:h-[500px] w-[340px] h-[435px] rounded-[20px]" />
-
+            <div
+              id="slide3"
+              className="carousel-item relative lg:w-[400px] lg:h-[500px] rounded-[20px] border-[#6698ff1a] border-[8px]"
+            >
+              <img
+                src="https://images.pexels.com/photos/9336369/pexels-photo-9336369.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="pizza"
+                className="lg:w-[485px] lg:h-[500px] w-[340px] h-[435px] rounded-[20px]"
+              />
             </div>
-            <div id="slide4" className="carousel-item relative lg:w-[400px] lg:h-[500px] rounded-[20px] border-[#6698ff1a] border-[8px]">
-              <img src="https://images.pexels.com/photos/12043012/pexels-photo-12043012.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt='pizza' className="lg:w-[485px] lg:h-[500px] w-[340px] h-[435px] rounded-[20px]" />
-
+            <div
+              id="slide4"
+              className="carousel-item relative lg:w-[400px] lg:h-[500px] rounded-[20px] border-[#6698ff1a] border-[8px]"
+            >
+              <img
+                src="https://images.pexels.com/photos/12043012/pexels-photo-12043012.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="pizza"
+                className="lg:w-[485px] lg:h-[500px] w-[340px] h-[435px] rounded-[20px]"
+              />
             </div>
-            <div id="slide5" className="carousel-item relative lg:w-[400px] lg:h-[500px] rounded-[20px] border-[#6698ff1a] border-[8px]">
-              <img src="https://images.pexels.com/photos/17586062/pexels-photo-17586062/free-photo-of-blossoming-houseplants-on-house-balcony.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt='pizza' className="lg:w-[485px] lg:h-[500px] w-[340px] h-[435px] rounded-[20px]" />
-
+            <div
+              id="slide5"
+              className="carousel-item relative lg:w-[400px] lg:h-[500px] rounded-[20px] border-[#6698ff1a] border-[8px]"
+            >
+              <img
+                src="https://images.pexels.com/photos/17586062/pexels-photo-17586062/free-photo-of-blossoming-houseplants-on-house-balcony.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="pizza"
+                className="lg:w-[485px] lg:h-[500px] w-[340px] h-[435px] rounded-[20px]"
+              />
             </div>
-            <div id="slide6" className="carousel-item relative lg:w-[400px] lg:h-[500px] rounded-[20px] border-[#6698ff1a] border-[8px]">
-              <img src="https://images.pexels.com/photos/17910786/pexels-photo-17910786.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt='pizza' className="lg:w-[485px] lg:h-[500px] w-[340px] h-[435px] rounded-[20px]" />
+            <div
+              id="slide6"
+              className="carousel-item relative lg:w-[400px] lg:h-[500px] rounded-[20px] border-[#6698ff1a] border-[8px]"
+            >
+              <img
+                src="https://images.pexels.com/photos/17910786/pexels-photo-17910786.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="pizza"
+                className="lg:w-[485px] lg:h-[500px] w-[340px] h-[435px] rounded-[20px]"
+              />
             </div>
-
           </div>
-          <div className='flex justify-center gap-5 mt-10 lg:hidden'>
-            <a className="btn btn-outline btn-info" href='#slide1'>Prev</a>
-            <a className="btn btn-outline btn-success" href='#slide5' >Next</a>
+          <div className="flex justify-center gap-5 mt-10 lg:hidden">
+            <a className="btn btn-outline btn-info" href="#slide1">
+              Prev
+            </a>
+            <a className="btn btn-outline btn-success" href="#slide5">
+              Next
+            </a>
           </div>
         </div>
       </section>
       {/* Gallery Section */}
 
       {/* Exhibition Section*/}
-      <ExhibitionSection></ExhibitionSection>
+      <GalleryPhoto></GalleryPhoto>
 
       {/* Exhibition Section*/}
     </div>

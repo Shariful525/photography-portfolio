@@ -1,45 +1,76 @@
-import React from 'react';
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import CarouselCard from "./CarouselCard";
 
-
-
-const Carousel = () => {
-    return (
-        <div className='w-full z-10'>
-            <div className="carousel w-full gap-10 mt-[80px]">
-                <div id="slide1" className="carousel-item relative rounded-[10px] border-[#6698ff1a] border-[8px] ">
-                    <img src="https://images.pexels.com/photos/10034617/pexels-photo-10034617.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt='pizza' className="lg:w-[485px] lg:h-[500px] w-[340px] h-[435px]" />
-
-                </div>
-                <div id="slide2" className="carousel-item relative rounded-[10px] border-[#6698ff1a] border-[8px]">
-                    <img src="https://images.pexels.com/photos/17887967/pexels-photo-17887967.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt='pizza' className="lg:w-[485px] lg:h-[500px] w-[340px] h-[435px]" />
-
-                </div>
-                <div id="slide3" className="carousel-item relative rounded-[10px] border-[#6698ff1a] border-[8px]">
-                    <img src="https://images.pexels.com/photos/9336369/pexels-photo-9336369.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt='pizza' className="lg:w-[485px] lg:h-[500px] w-[340px] h-[435px]" />
-
-                </div>
-                <div id="slide4" className="carousel-item relative rounded-[10px] border-[#6698ff1a] border-[8px]">
-                    <img src="https://images.pexels.com/photos/12043012/pexels-photo-12043012.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt='pizza' className="lg:w-[485px] lg:h-[500px] w-[340px] h-[435px]" />
-
-                </div>
-                <div id="slide5" className="carousel-item relative rounded-[10px] border-[#6698ff1a] border-[8px]">
-                    <img src="https://images.pexels.com/photos/17586062/pexels-photo-17586062/free-photo-of-blossoming-houseplants-on-house-balcony.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt='pizza' className="lg:w-[485px] lg:h-[500px] w-[340px] h-[435px]" />
-
-                </div>
-                <div id="slide6" className="carousel-item relative rounded-[10px] border-[#6698ff1a] border-[8px]">
-                    <img src="https://images.pexels.com/photos/17910786/pexels-photo-17910786.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt='pizza' className="lg:w-[485px] lg:h-[500px] w-[340px] h-[435px]" />
-
-                </div>
-
-
-            </div>
-            <div className='flex justify-center gap-5 mt-10'>
-                <a className="btn btn-outline btn-info" href='#slide6'>Prev</a>
-                <a className="btn btn-outline btn-success" href='#slide5' >Next</a>
-            </div>
-        </div>
-
-    );
+const CarouselComponent = () => {
+  const imgUrls = [
+    "https://images.pexels.com/photos/10034617/pexels-photo-10034617.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "https://images.pexels.com/photos/17887967/pexels-photo-17887967.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "https://images.pexels.com/photos/9336369/pexels-photo-9336369.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "https://images.pexels.com/photos/12043012/pexels-photo-12043012.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "https://images.pexels.com/photos/17586062/pexels-photo-17586062/free-photo-of-blossoming-houseplants-on-house-balcony.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "https://images.pexels.com/photos/17910786/pexels-photo-17910786.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  ];
+  return (
+    <Carousel
+      additionalTransfrom={0}
+      arrows
+      autoPlay
+      autoPlaySpeed={1000}
+      centerMode={false}
+      className=""
+      containerClass="container-with-dots"
+      dotListClass=""
+      draggable
+      focusOnSelect={false}
+      infinite
+      itemClass=""
+      keyBoardControl
+      minimumTouchDrag={80}
+      pauseOnHover
+      renderArrowsWhenDisabled={false}
+      renderButtonGroupOutside={false}
+      renderDotsOutside={false}
+      responsive={{
+        desktop: {
+          breakpoint: {
+            max: 3000,
+            min: 1024,
+          },
+          items: 3,
+          partialVisibilityGutter: 40,
+        },
+        mobile: {
+          breakpoint: {
+            max: 464,
+            min: 0,
+          },
+          items: 1,
+          partialVisibilityGutter: 30,
+        },
+        tablet: {
+          breakpoint: {
+            max: 1024,
+            min: 464,
+          },
+          items: 2,
+          partialVisibilityGutter: 30,
+        },
+      }}
+      rewind={false}
+      rewindWithAnimation={false}
+      rtl={false}
+      shouldResetAutoplay
+      showDots={false}
+      sliderClass=""
+      slidesToSlide={2}
+      swipeable
+    >
+      {imgUrls?.map((imgUrl, i) => (
+        <CarouselCard key={i} imgUrl={imgUrl} />
+      ))}
+    </Carousel>
+  );
 };
 
-export default Carousel;
+export default CarouselComponent;
