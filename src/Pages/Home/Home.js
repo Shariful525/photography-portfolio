@@ -59,7 +59,7 @@ const Home = () => {
             </div>
           </div>
           <div
-            className="lg:absolute lg:right-0 lg:bottom-0 ring-animate"
+            className="lg:absolute lg:right-24 lg:bottom-28 ring-animate "
             id="ring"
           >
             <img className="lg:w-[223px]" src={ring} alt="" />
