@@ -9,7 +9,9 @@
   margin: 0 auto;
   right: 50%;
   translate: -50%;
+  border-radius: 10px;
 }
+
 .top-section-container::after {
   content: "";
   position: absolute;

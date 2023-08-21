@@ -17,7 +17,7 @@ function Header() {
   };
 
   return (
-    <div>
+    <div >
       <nav className="md:mx-[100px] mx-[20px] my-[20px] md:my-[40px] md:flex md:justify-center md:relative">
         <div className="flex items-center justify-between">
           {/* Logo */}
@@ -43,9 +43,8 @@ function Header() {
         </div>
         {/* Mobile Nav */}
         <div
-          className={`mt-[115px] ${
-            isMenuOpen ? "block" : "hidden"
-          }  md:flex md:mt-0 md:items-center md:justify-evenly`}
+          className={`mt-[115px] ${isMenuOpen ? "block" : "hidden"
+            }  md:flex md:mt-0 md:items-center md:justify-evenly`}
           id="menu-for-mobile"
         >
           <div>

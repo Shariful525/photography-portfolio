@@ -3,7 +3,6 @@ import "./Home.css";
 import imageTwo from "../../Photos/images/banner-pic.png";
 import triangle from "../../Photos/images/small-triangle.png";
 import ring from "../../Photos/images/banner-ring.png";
-import adImg from "../../Photos/images/ads.png";
 import aboutImg from "../../Photos/images/About.png";
 import simble from "../../Photos/images/gonok.png";
 import ContactBtn from "../../Photos/images/contactBtn.svg";
@@ -30,9 +29,7 @@ const Home = () => {
               alt="banner-img"
             />
           </div>
-          <div className="absolute bottom-[-250px] left-[120px] lg:bottom-[-150px] lg:left-[450px] lg:w-[328px] w-[220px] h-[183px]">
-            <img src={adImg} alt="" />
-          </div>
+
 
           <div className="lg:w-8/12 lg:flex flex-col lg:relative text-center">
             <div className="lg:flex  gap-4 lg:mb-[200px] ">
@@ -59,7 +56,7 @@ const Home = () => {
             </div>
           </div>
           <div
-            className="lg:absolute lg:right-24 lg:bottom-28 ring-animate "
+            className="lg:absolute lg:right-24 lg:bottom-28 ring-animate"
             id="ring"
           >
             <img className="lg:w-[223px]" src={ring} alt="" />
