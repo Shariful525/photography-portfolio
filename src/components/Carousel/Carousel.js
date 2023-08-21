@@ -63,8 +63,9 @@ const CarouselComponent = () => {
       shouldResetAutoplay
       showDots={false}
       sliderClass=""
-      slidesToSlide={2}
+      slidesToSlide={1}
       swipeable
+      transitionDuration={1000}
     >
       {imgUrls?.map((imgUrl, i) => (
         <CarouselCard key={i} imgUrl={imgUrl} />

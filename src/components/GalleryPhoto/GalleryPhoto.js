@@ -10,10 +10,7 @@ import exhibition7 from "../../Photos/images/Exhibition (7).png";
 
 const GalleryPhoto = () => {
   return (
-    <section
-      id="exhibition-section"
-      className="lg:mt[273px] mt-[176px] max-w-[1240px] mx-auto"
-    >
+    <section id="exhibition-section" className="lg:mt[273px] mt-[176px]">
       <div>
         <div className="flex justify-between relative">
           <div>
