@@ -12,7 +12,13 @@ import "./Contact.css";
 
 const Contact = () => {
   return (
-    <div className=" sm:text-center">
+    <div className=" sm:text-center relative">
+      {/* bg elliplses */}
+      <div className="absolute h-[119px] w-[119px] bg-[#3b5cff99] blur-[82px] rounded-full top-28 left-48"></div>
+      <div className="absolute h-[192px] w-[192px] bg-[#ff3beb24] blur-[82px] rounded-full right-28 top-96"></div>
+      <div className="absolute h-[159px] w-[159px] bg-[#d3ff583b] blur-[82px] rounded-full left-1/2 top-72"></div>
+      <div className="absolute h-[159px] w-[159px] bg-[#ff3beb24] blur-[82px] rounded-full top-[550px] left-1/4"></div>
+      {/* bg elliplses */}
       <div className="hero min-h-screen">
         <div className="hero-content flex-col w-full sm:gap-[68px]">
           {/* get in touch with me */}
@@ -78,7 +84,7 @@ const Contact = () => {
 
           {/* bio */}
 
-          <div className=" lg:ml-[-800px] border-x-amber-50 lg:mt-[-400px] md:ml-[-400px] mx-5 mt-10 ">
+          <div className=" lg:ml-[-750px] border-x-amber-50 lg:mt-[-400px] md:ml-[-400px] mx-5 mt-10 ">
             <div className="flex justify-between items-center">
               <div className="flex flex-col gap-5 ">
                 <div className="flex text-left gap-5 ">

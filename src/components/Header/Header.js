@@ -79,6 +79,21 @@ function Header() {
               Contact
             </Link>
           </div>
+
+          <div className="flex justify-center items-center lg:my-[50px] my-[45px] lg:hidden md:hidden">
+            <Link className="text-white hover:text-gray-400 mx-8">
+              <img src={twImg} alt="twitter logo" />
+            </Link>
+            <Link className="text-white hover:text-gray-400 mx-8">
+              <img src={fbImg} alt="twitter logo" />
+            </Link>
+            <Link className="text-white hover:text-gray-400 mx-8">
+              <img src={ytImg} alt="twitter logo" />
+            </Link>
+            <Link className="text-white hover:text-gray-400 mx-8">
+              <img src={vImg} alt="twitter logo" />
+            </Link>
+          </div>
         </div>
 
         <div
