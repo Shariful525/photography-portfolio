@@ -12,7 +12,7 @@ import CarouselComponent from "../../components/Carousel/Carousel";
 const About = () => {
   const images = [orange, butterflyImg, frogImg, orange];
   return (
-    <div className="mx-auto">
+    <div className="mx-auto max-w-[1240px]">
       <div className="h-[800px] w-full bg-[rgba(0,0,0,.5)] relative">
         <section className=" absolute max-w-[1240px] mx-auto inset-0">
           <div className="">
