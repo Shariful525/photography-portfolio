@@ -78,7 +78,9 @@ const About = () => {
       {/* end carousel section */}
 
       {/* Exhibition gallary section start  */}
-      <GalleryPhoto></GalleryPhoto>
+      <div className="max-w-[1240px] mx-auto">
+        <GalleryPhoto></GalleryPhoto>
+      </div>
       {/* Exhibition gallary section end  */}
     </div>
   );
