@@ -12,7 +12,7 @@ import "./Contact.css";
 
 const Contact = () => {
   return (
-    <div className=" sm:text-center relative">
+    <div className="sm:text-center relative" id="contact">
       {/* bg elliplses */}
       <div className="absolute h-[119px] w-[119px] bg-[#3b5cff99] blur-[82px] rounded-full top-28 left-48"></div>
       <div className="absolute h-[192px] w-[192px] bg-[#ff3beb24] blur-[82px] rounded-full right-28 top-96"></div>
@@ -151,7 +151,7 @@ const Contact = () => {
       {/* Find Me on google */}
 
       <div className="mt-[222px] max-w-[1240px] mx-auto">
-        <div className="flex justify-between items-center mx-[100px] lg:flex-row-reverse relative">
+        <div className="flex justify-between items-center mx-[100px] lg:flex-row-reverse relative" id="map-section">
           <div id="mapslider">
             <img className="lg:w-[164px] w-[100px]" src={mapSider} alt="" />
           </div>

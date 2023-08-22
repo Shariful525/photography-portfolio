@@ -17,8 +17,8 @@ function Header() {
   };
 
   return (
-    <div className="lg:max-w-[1240px] lg:mx-auto" id="header">
-      <nav className="  my-[20px] md:my-[40px] md:flex md:justify-between md:relative ">
+    <div className=" w-full lg:px- md:px-5 md:py-5 lg:py-10 lg:mx-auto" id="header">
+      <nav className="    md:flex md:justify-between md:relative ">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="text-white">
@@ -44,13 +44,14 @@ function Header() {
         {/* Mobile Nav */}
         <div
           className={`mt-[115px] ${isMenuOpen ? "block" : "hidden"
-            }  md:flex md:mt-0 md:items-center md:justify-evenly `}
+            }  md:flex md:mt-0 md:items-center md:justify-evenly gap-10 lg:gap-20`}
           id="menu-for-mobile"
+
         >
           <div>
             <Link
               to="/about"
-              className="block text-[30px]  md:text-[16px] md:text-[500] text-[700]  hover:underline text-white text-center"
+              className="block text-[30px]  md:text-[16px] md:text-[500] font-[500]  focus:underline focus:font-[700] text-white text-center"
             >
               About
             </Link>
@@ -58,7 +59,7 @@ function Header() {
           <div>
             <Link
               to="/gallery"
-              className="block text-[30px] md:text-[16px] md:text-[500] text-[700] hover:underline text-white text-center"
+              className="block text-[30px] md:text-[16px] md:text-[500] font-[500] focus:underline focus:font-[700] text-white text-center"
             >
               Gallery
             </Link>
@@ -66,7 +67,7 @@ function Header() {
           <div>
             <Link
               to="/exhibition"
-              className="block text-[30px] md:text-[16px] md:text-[500] text-[700] hover:underline text-white text-center"
+              className="block text-[30px] md:text-[16px] md:text-[500] font-[500] focus:underline focus:font-[700] text-white text-center"
             >
               Exhibition
             </Link>
@@ -74,13 +75,13 @@ function Header() {
           <div>
             <Link
               to="/contact"
-              className="block text-[30px] md:text-[16px] md:text-[500] text-[700] hover:underline text-white text-center"
+              className="block text-[30px] md:text-[16px] md:text-[500] font-[500] focus:underline focus:font-[700] text-white text-center"
             >
               Contact
             </Link>
           </div>
 
-          <div className="flex justify-center items-center lg:my-[50px] my-[45px] lg:hidden md:hidden">
+          <div className="flex justify-center items-center  mt-[120px] lg:hidden md:hidden">
             <Link className="text-white hover:text-gray-400 mx-8">
               <img src={twImg} alt="twitter logo" />
             </Link>

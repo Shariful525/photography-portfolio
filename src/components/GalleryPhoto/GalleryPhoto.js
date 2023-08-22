@@ -13,7 +13,8 @@ const GalleryPhoto = () => {
     <section id="exhibition-section" className="lg:mt[273px] mt-[176px]">
       <div>
         <div className="flex justify-between relative">
-          <div>
+          <div className="relative">
+            <div className=" absolute -left-10 top-2 bg-[#6698ff26] w-[187px] h-[44px]"></div>
             <h1 className="lg:text-[50px] text-[30px] text-white font-bold">
               Exhibition
             </h1>

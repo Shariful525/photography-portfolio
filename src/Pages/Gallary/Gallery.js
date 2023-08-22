@@ -40,29 +40,33 @@ import CarouselComponent from "../../components/Carousel/Carousel";
 
 const Gallery = () => {
   return (
-    <div className="max-w-[1440px] mx-auto mb-[200px] lg:mt-[80px]  relative">
-      <div className="absolute h-[119px] w-[119px] bg-[#3b5cff99] blur-[82px] rounded-full"></div>
-      <div className="absolute h-[192px] w-[192px] bg-[#ff3beb24] blur-[82px] rounded-full right-0 top-36"></div>
-      <div className="absolute h-[159px] w-[159px] bg-[#d3ff583b] blur-[82px] rounded-full right-2/4 top-16"></div>
-      {/* Top Text Section */}
-      <div>
-        <h3 className="text-[#F5A623] text-[18px] text-bold text-center mb-5">
-          #1 Photo of The Year Winners
-        </h3>
-        <h1 className="text-white lg:text-7xl text-[38px] text-center text-bold">
-          Gallery{" "}
-        </h1>
-      </div>
-      <div className="  ml-[154px] w-[204px] absolute" id="g-top-image">
-        <img alt="" src={galleryAdd} />
-      </div>
-      {/* Top Text Section */}
+    <div className=" mb-[200px] relative">
+      <div className="w-full bg-[rgba(0,0,0,0.2)]">
+        <div className="absolute h-[119px] w-[119px] bg-[#3b5cff99] blur-[82px] rounded-full"></div>
+        <div className="absolute h-[192px] w-[192px] bg-[#ff3beb24] blur-[82px] rounded-full right-0 top-36"></div>
+        <div className="absolute h-[159px] w-[159px] bg-[#d3ff583b] blur-[82px] rounded-full right-2/4 top-16"></div>
+        {/* Top Text Section */}
+        <div className="max-w-[1440px] mx-auto  ">
+          <div>
+            <h3 className="text-[#F5A623] text-[18px] text-bold text-center mb-5">
+              #1 Photo of The Year Winners
+            </h3>
+            <h1 className="text-white lg:text-7xl text-[38px] text-center text-bold">
+              Gallery{" "}
+            </h1>
+          </div>
+          <div className="  ml-[154px] w-[204px] absolute" id="g-top-image">
+            <img alt="" src={galleryAdd} />
+          </div>
+          {/* Top Text Section */}
 
-      {/* Carousel Section */}
-      <div>
-        <CarouselComponent></CarouselComponent>
+          {/* Carousel Section */}
+          <div>
+            <CarouselComponent></CarouselComponent>
+          </div>
+          {/* Carousel Section */}
+        </div>
       </div>
-      {/* Carousel Section */}
 
       {/* Photo Gallery Section */}
       <div className="mt-[100px] relative px-100" id="photo-gallery">
@@ -170,7 +174,10 @@ const Gallery = () => {
         </div>
       </div>
       {/* Gallery Picture Section */}
+
+
     </div>
+
   );
 };
 

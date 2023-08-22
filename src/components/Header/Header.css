@@ -1,14 +1,8 @@
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     #header {
-        margin: 0 20px;
-    }
-}
-
-@media (max-width: 767px) {
-    #mobile-menu {
-        display: flex;
-        justify-content: center;
-        gap: 50px;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.2);
+        backdrop-filter: 25px;
     }
 
     #menu-for-mobile div {
@@ -16,13 +10,14 @@
     }
 }
 
-@media (max-width: 930px) {
+
+@media (max-width: 768px) {
     #mobile-menu {
         display: none;
 
     }
 }
 
-#menu-for-mobile {
-    gap: 84px;
+#header {
+    background-color: rgba(0, 0, 0, 0.2);
 }

@@ -4,6 +4,17 @@
   backdrop-filter: blur(25px);
 }
 
+#contact {
+  background: linear-gradient(180deg, #161515 0%, #1B1A1A 100%);
+}
+
+#map-section {
+  background-image: url(../../Photos/images/gallery-vector.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .send-message {
   border-width: 1.5px;
   border-style: solid;

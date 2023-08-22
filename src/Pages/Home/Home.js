@@ -69,10 +69,11 @@ const Home = () => {
         <section id="about-section" className="mt-[292px]">
           <div className="flex flex-col lg:flex-row lg:items-center mx-5">
             <div className="lg:w-6/12 mx-auto">
-              <div className="lg:mb-[73px] mb-[52px]">
-                <h3 className="text-white lg:text-left lg:text-[50px] text-[27px]">
-                  About{" "}
-                  <span className="text-bold lg:text-[50px] ">Rasel Khan</span>
+              <div className="lg:mb-[73px] mb-[52px] relative">
+                <div className=" absolute -left-10 top-2 bg-[#6698ff26] w-[187px] h-[44px]"></div>
+                <h3 className="text-white font-[500] lg:text-left lg:text-[50px] text-[27px]">
+                  About
+                  <span className="font-[700] lg:text-[50px]"> Rasel Khan</span>
                 </h3>
               </div>
               <div className="lg:w-[562px] w-[384px]">
@@ -108,9 +109,10 @@ const Home = () => {
         {/* Gallery Section start */}
         <section id="my-gallery" className="lg:mt-[193px] mt-[182px]">
           <div className="gallery-section ">
-            <div className="">
-              <h1 className="lg:text-[50px] text-[30px] text-white text-left text-bold">
-                My Gallery
+            <div className="relative">
+              <div className=" absolute left-24 top-2 bg-[#6698ff26] w-[187px] h-[44px]"></div>
+              <h1 className="lg:text-[50px] text-[30px] text-white text-left text-bold font-[400]">
+                My <span className="font-[700]">Gallery</span>
               </h1>
             </div>
             <div className="lg:flex lg:justify-between">
