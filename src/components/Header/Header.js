@@ -17,11 +17,11 @@ function Header() {
   };
 
   return (
-    <div >
-      <nav className="md:mx-[100px] mx-[20px] my-[20px] md:my-[40px] md:flex md:justify-center md:relative">
+    <div className="lg:max-w-[1240px] lg:mx-auto" id="header">
+      <nav className="  my-[20px] md:my-[40px] md:flex md:justify-between md:relative ">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="text-white md:ml-[-390px]">
+          <div className="text-white">
             <Link to="/">
               <img src={imageOne} alt="" />
             </Link>
@@ -44,7 +44,7 @@ function Header() {
         {/* Mobile Nav */}
         <div
           className={`mt-[115px] ${isMenuOpen ? "block" : "hidden"
-            }  md:flex md:mt-0 md:items-center md:justify-evenly`}
+            }  md:flex md:mt-0 md:items-center md:justify-evenly `}
           id="menu-for-mobile"
         >
           <div>
@@ -112,6 +112,9 @@ function Header() {
               FOLLOW ME
             </span>
           </div>
+        </div>
+        <div>
+
         </div>
       </nav>
     </div>

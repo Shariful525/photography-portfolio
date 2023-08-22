@@ -16,7 +16,7 @@ const Contact = () => {
       <div className="hero min-h-screen">
         <div className="hero-content flex-col w-full sm:gap-[68px]">
           {/* get in touch with me */}
-          <div className="lg:flex lg:justify-between mt-[100px] w-full lg:px-20">
+          <div className="lg:flex lg:justify-between mt-[100px] w-full lg:gap-[155px]">
             {/*text site */}
             <div className="mx-auto mr-5 text-left">
               <div className="flex gap-5 mb-10 sm:w-full sm:px-0">
@@ -34,7 +34,7 @@ const Contact = () => {
               </p>
             </div>
             {/* form section */}
-            <div className="card flex-shrink-0 w-96 lg:w-[500px] message-card mt-20 mx-auto relative">
+            <div className="card flex-shrink-0 w-full lg:w-[500px] message-card mt-20 mx-auto relative bg-[#ffffff0f] ">
               <div className="absolute right-0 top-[-30px]">
                 <img className="" src={formTop} alt="" />
               </div>
@@ -78,7 +78,7 @@ const Contact = () => {
 
           {/* bio */}
 
-          <div className=" lg:ml-[-600px] border-x-amber-50 lg:mt-[-400px] md:ml-[-400px] mx-5 mt-10 ">
+          <div className=" lg:ml-[-800px] border-x-amber-50 lg:mt-[-400px] md:ml-[-400px] mx-5 mt-10 ">
             <div className="flex justify-between items-center">
               <div className="flex flex-col gap-5 ">
                 <div className="flex text-left gap-5 ">
@@ -144,7 +144,7 @@ const Contact = () => {
 
       {/* Find Me on google */}
 
-      <div className="mt-[222px] ">
+      <div className="mt-[222px] max-w-[1240px] mx-auto">
         <div className="flex justify-between items-center mx-[100px] lg:flex-row-reverse relative">
           <div id="mapslider">
             <img className="lg:w-[164px] w-[100px]" src={mapSider} alt="" />
@@ -162,8 +162,8 @@ const Contact = () => {
             style={{ filter: "invert(90%)" }}
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d459.7031344869064!2d91.23950763491821!3d22.816352350344328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375359b03728e225%3A0x8b12890374e6a618!2sExpertSquad.net!5e0!3m2!1sen!2sbd!4v1691510879390!5m2!1sen!2sbd"
             title="google-map"
-            width="95%"
-            height="450"
+            width="100%"
+            height="500"
             className="mx-auto rounded-[20px] border-8 border-[#6698ff1a] lg:h-[450px] h-[280px]"
             loading="fast"
             referrerpolicy="no-referrer-when-downgrade"

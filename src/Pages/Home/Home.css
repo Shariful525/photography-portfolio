@@ -1,4 +1,4 @@
-.top-section-container::before {
+/* .top-section-container::before {
   content: "";
   position: absolute;
   width: 200px;
@@ -19,14 +19,13 @@
   height: 300px;
   bottom: -70px;
   background: blue;
-  /* background: url(); */
   rotate: 10deg;
   left: 45%;
   right: 50%;
   translate: -50%;
   margin: 0 auto;
   border-radius: 10px;
-}
+} */
 
 #about-section {
   background-image: url(../../Photos/images/CircleShape.png);
@@ -53,7 +52,7 @@
   background-size: contain;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 760px) {
   .home-page-top-banner {
     display: flex;
     flex-direction: column-reverse;
@@ -63,6 +62,6 @@
     position: absolute;
 
     right: -100px;
-    bottom: 350px;
+    bottom: 300px;
   }
 }

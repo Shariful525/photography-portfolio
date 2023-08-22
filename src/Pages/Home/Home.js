@@ -14,15 +14,15 @@ const Home = () => {
     console.log("Button Clicked");
   };
   return (
-    <div>
+    <div className=" lg:mx-auto">
       {/* Hero Section */}
       <div className="top-section-container w-full bg-[rgba(0,0,0,0.2)] h-[800px] relative">
         <div className="absolute h-[119px] w-[119px] bg-[#3b5cff99] blur-[82px] rounded-full"></div>
         <div className="absolute h-[196px] w-[196px] bg-[#ff3beb24] blur-[82px] rounded-full right-52 bottom-80"></div>
         <div className="absolute h-[196px] w-[196px] bg-[#d3ff583b] blur-[82px] rounded-full right-1/2 top-16"></div>
         <div className="absolute h-[196px] w-[196px] bg-[#ff3beb24] blur-[82px] rounded-full bottom-52 left-72"></div>
-        <section className="lg:flex lg:justify-between w-[1240px] mx-auto lg:gap-8 home-page-top-banner pt-10">
-          <div>
+        <section className="lg:flex md:flex md:flex-col-reverse lg:flex-row  lg:justify-between lg:max-w-[1240px]  mx-auto  lg:gap-8 home-page-top-banner pt-10">
+          <div className="z-10 lg:z-0">
             <img
               className="lg:w-[388px] w-[368px] h-[440px] lg:h-[463px] mx-auto "
               src={imageTwo}
@@ -31,7 +31,7 @@ const Home = () => {
           </div>
 
 
-          <div className="lg:w-8/12 lg:flex flex-col lg:relative text-center">
+          <div className="lg:w-8/12  lg:flex flex-col lg:relative text-center">
             <div className="lg:flex  gap-4 lg:mb-[200px] ">
               <img alt="" className="mx-auto lg:mx-0 mb-4" src={triangle} />
               <p className="text-[#F5A623] font-bold text-[18px]">
@@ -39,14 +39,14 @@ const Home = () => {
               </p>
             </div>
 
-            <div className="lg:mt-16 lg:absolute mt-4 lg:left-[-65px] lg:leading-normal">
-              <h2 className="text-[#FFFFFF] text-[clamp(30px,3vw,60px)] font-semi-bold lg:text-left  ">
+            <div className="lg:mt-16 lg:absolute mt-4 lg:left-[-65px]  ">
+              <h2 className="text-[#FFFFFF] text-[38px] lg:text-[68px]  font-[400]  lg:text-left  ">
                 Photography helps <br />
-                <span className="font-bold ">People to see</span>
+                <span className="font-[700] ">People to see</span>
               </h2>
             </div>
 
-            <div className=" mt-4 opacity-50 t-color lg:text-[18px] text-[14px] lg:text-left lg:ml-[70px] lg:w-[500px] mb-[51px]">
+            <div className=" mt-4 opacity-50 t-color lg:text-[18px] text-[14px] lg:text-left lg:ml-[70px] lg:w-[500px] mx-5   mb-[51px]">
               <p>
                 Do you have an idea but are struggling to execute it because of
                 the complexities involved? Don't worry. We are here to solve
@@ -67,7 +67,7 @@ const Home = () => {
       <div className=" max-w-[1240px] mx-auto">
         {/* About Section start */}
         <section id="about-section" className="mt-[292px]">
-          <div className="flex flex-col lg:flex-row lg:items-center">
+          <div className="flex flex-col lg:flex-row lg:items-center mx-5">
             <div className="lg:w-6/12 mx-auto">
               <div className="lg:mb-[73px] mb-[52px]">
                 <h3 className="text-white lg:text-left lg:text-[50px] text-[27px]">
@@ -83,7 +83,7 @@ const Home = () => {
               <div className="absolute right-[-30px] top-[-25px] lg:right-0 lg:top-[-200px]">
                 <img className="w-[94px]" src={simble} alt="null" />
               </div>
-              <div>
+              <div className="z-10">
                 <p className="lg:text-[18px] lg:text-left text-center z-[1] t-color">
                   In a laoreet purus. Integer turpis quam, laoreet id orci nec,
                   ultrices lacinia nunc. Aliquam erat vo, Aliquam pulvinar

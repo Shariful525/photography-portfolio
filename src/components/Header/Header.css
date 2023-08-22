@@ -1,4 +1,10 @@
 @media (max-width: 600px) {
+    #header {
+        margin: 0 20px;
+    }
+}
+
+@media (max-width: 767px) {
     #mobile-menu {
         display: flex;
         justify-content: center;
@@ -6,7 +12,17 @@
     }
 
     #menu-for-mobile div {
-
         margin-bottom: 50px;
     }
+}
+
+@media (max-width: 930px) {
+    #mobile-menu {
+        display: none;
+
+    }
+}
+
+#menu-for-mobile {
+    gap: 84px;
 }
