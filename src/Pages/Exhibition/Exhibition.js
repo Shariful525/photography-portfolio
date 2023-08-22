@@ -10,7 +10,7 @@ import Chckoutbtn from "../../components/Button/Chckoutbtn";
 
 const Exhibition = () => {
   return (
-    <div className="mx-auto">
+    <div className="mx-auto mx-w-[1240px]">
       <div className="h-[800px] w-full bg-[rgba(0,0,0,0.2)] relative">
         <div className="absolute h-[119px] w-[119px] bg-[#3b5cff99] blur-[82px] rounded-full"></div>
         <div className="absolute h-[196px] w-[196px] bg-[#ff3beb24] blur-[82px] rounded-full right-52 bottom-80"></div>
